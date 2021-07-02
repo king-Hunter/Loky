@@ -1,0 +1,54 @@
+{
+    "sourceFile": "app/core/component/header/header.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1625198514418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625198521290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n+import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n-i\n+import FormsModule\n \n \n @NgModule({\n   declarations: [],\n"
+                },
+                {
+                    "date": 1625198529203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n-import FormsModule\n+I\n \n-\n @NgModule({\n   declarations: [],\n   imports: [\n     CommonModule\n"
+                },
+                {
+                    "date": 1625198534506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n-I\n+import { IonicModule } from '@ionic/angular';\n \n @NgModule({\n   declarations: [],\n   imports: [\n"
+                },
+                {
+                    "date": 1625198543573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n-import { IonicModule } from '@ionic/angular';\n+import { IonicModule } from '@ionic/angular'\n+h;\n \n @NgModule({\n   declarations: [],\n   imports: [\n"
+                },
+                {
+                    "date": 1625198549432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n-import { IonicModule } from '@ionic/angular'\n-h;\n+import { IonicModule } from '@ionic/angular';\n+he\n \n @NgModule({\n   declarations: [],\n   imports: [\n"
+                },
+                {
+                    "date": 1625198557246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n+import { HeaderComponent } from './header.component';\n import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { IonicModule } from '@ionic/angular';\n-he\n \n+\n @NgModule({\n   declarations: [],\n   imports: [\n     CommonModule\n"
+                },
+                {
+                    "date": 1625198562403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import { HeaderComponent } from './header.component';\n+import { FormsModule } from '@angular/forms';\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { IonicModule } from '@ionic/angular';\n+\n+@NgModule({\n+  declarations: [],\n+  imports: [\n+    CommonModule,\n+  ]\n+})\n+export class HeaderModule { }\n"
+                },
+                {
+                    "date": 1625198567851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \n @NgModule({\n   declarations: [],\n   imports: [\n-    CommonModule, FormsModule\n+    CommonModule, FormsModule,\n   ]\n })\n export class HeaderModule { }\n"
+                },
+                {
+                    "date": 1625198573305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import { HeaderComponent } from './header.component';\n+import { FormsModule } from '@angular/forms';\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { IonicModule } from '@ionic/angular';\n+\n+@NgModule({\n+  declarations: [],\n+  imports: [\n+    CommonModule, FormsModule, IonicModule, \n+  ]\n+})\n+export class HeaderModule { }\n"
+                }
+            ],
+            "date": 1625198514418,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\ni\n\n\n@NgModule({\n  declarations: [],\n  imports: [\n    CommonModule\n  ]\n})\nexport class HeaderModule { }\n"
+        }
+    ]
+}

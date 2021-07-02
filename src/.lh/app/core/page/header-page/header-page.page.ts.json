@@ -1,0 +1,30 @@
+{
+    "sourceFile": "app/core/page/header-page/header-page.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625133021006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625133029367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import { Component, Input, OnInit } from '@angular/core';\n+\n+@Component({\n+  selector: 'app-header-page',\n+  templateUrl: './header-page.page.html',\n+  styleUrls: ['./header-page.page.scss'],\n+})\n+export class HeaderPagePage implements OnInit {\n+@Input() title: string;\n+  constructor() { }\n+\n+  ngOnInit() {\n+  }\n+\n+}\n"
+                },
+                {
+                    "date": 1625133953175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,22 +9,8 @@\n @Input() title: string;\n   constructor() { }\n \n   ngOnInit() {\n+    \n   }\n \n }\n-import { Component, OnInit } from '@angular/core';\n-\n-@Component({\n-  selector: 'app-header-page',\n-  templateUrl: './header-page.page.html',\n-  styleUrls: ['./header-page.page.scss'],\n-})\n-export class HeaderPagePage implements OnInit {\n-@Input() name: string;\n-  constructor() { }\n-\n-  ngOnInit() {\n-  }\n-\n-}\n"
+                },
+                {
+                    "date": 1625133958838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n @Input() title: string;\n   constructor() { }\n \n   ngOnInit() {\n-    console.l\n+    console.log\n   }\n \n }\n"
+                }
+            ],
+            "date": 1625133021006,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header-page',\n  templateUrl: './header-page.page.html',\n  styleUrls: ['./header-page.page.scss'],\n})\nexport class HeaderPagePage implements OnInit {\n@Input() name: string;\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n"
+        }
+    ]
+}

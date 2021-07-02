@@ -1,0 +1,74 @@
+{
+    "sourceFile": "app/core/service/notification/toast-notifications.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1625127098866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625127104377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Injectable } from '@angular/core';\n+import ^^\n \n-\n @Injectable({\n   providedIn: 'root'\n })\n export class ToastNotificationsService {\n"
+                },
+                {
+                    "date": 1625127109483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import { Injectable } from '@angular/core';\n+import { Toad}\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class ToastNotificationsService {\n+\n+  constructor() { }\n+}\n"
+                },
+                {
+                    "date": 1625127117746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,10 @@\n import { Injectable } from '@angular/core';\n-import { Toad}\n+import { ToadCo}\n \n @Injectable({\n   providedIn: 'root'\n })\n export class ToastNotificationsService {\n \n   constructor() { }\n }\n-import { Injectable } from '@angular/core';\n-import ^^\n-\n-@Injectable({\n-  providedIn: 'root'\n-})\n-export class ToastNotificationsService {\n-\n-  constructor() { }\n-}\n"
+                },
+                {
+                    "date": 1625127126178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Injectable } from '@angular/core';\n-import { ToadCo}\n+import { ToastController}\n \n @Injectable({\n   providedIn: 'root'\n })\n"
+                },
+                {
+                    "date": 1625127142718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n import { Injectable } from '@angular/core';\n-import { ToastController}\n+import { ToastController } from '@ionic/angular';\n \n @Injectable({\n   providedIn: 'root'\n })\n export class ToastNotificationsService {\n \n-  constructor() { }\n+  constructor(\n+    \n+  ) { }\n }\n"
+                },
+                {
+                    "date": 1625127148261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n })\n export class ToastNotificationsService {\n \n   constructor(\n-    \n+    private t\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625127153787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n })\n export class ToastNotificationsService {\n \n   constructor(\n-    private t\n+    private toast\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625127159045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n })\n export class ToastNotificationsService {\n \n   constructor(\n-    private toast\n+    private toastController =\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625127164578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n })\n export class ToastNotificationsService {\n \n   constructor(\n-    private toastController =\n+    private toastController : To\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625127170348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n })\n export class ToastNotificationsService {\n \n   constructor(\n-    private toastController : To\n+    private toastController : ToastCo\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625127176534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n })\n export class ToastNotificationsService {\n \n   constructor(\n-    private toastController : ToastCo\n+private toastController : ToastController\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625127182855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,6 @@\n   providedIn: 'root'\n })\n export class ToastNotificationsService {\n \n-  constructor(\n-private toastController : ToastController\n-  ) { }\n+  constructor( private toastController : ToastController ) { }\n }\n"
+                },
+                {
+                    "date": 1625127202685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   providedIn: 'root'\n })\n export class ToastNotificationsService {\n   constructor( private toastController : ToastController ) { }\n-  \n+  p\n }\n"
+                },
+                {
+                    "date": 1625127208051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import { Injectable } from '@angular/core';\n+import { ToastController } from '@ionic/angular';\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class ToastNotificationsService {\n+  constructor( private toastController : ToastController ) { }\n+  public function succ\n+}\n"
+                }
+            ],
+            "date": 1625127098866,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\n\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class ToastNotificationsService {\n\n  constructor() { }\n}\n"
+        }
+    ]
+}

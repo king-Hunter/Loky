@@ -1,0 +1,38 @@
+{
+    "sourceFile": "app/module/page/option-page/option-page.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1625201704768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625201710569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n+import { HeaderModule } from './../../../core/component/header/header.module';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { FormsModule } from '@angular/forms';\n-H\n+HeaderModule\n import { IonicModule } from '@ionic/angular';\n \n import { OptionPagePageRoutingModule } from './option-page-routing.module';\n \n"
+                },
+                {
+                    "date": 1625201717224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   imports: [\n     CommonModule,\n     FormsModule,\n     IonicModule,\n-    OptionPagePageRoutingModule\n+    OptionPagePageRoutingModule,\n   ],\n   declarations: [OptionPagePage]\n })\n export class OptionPagePageModule {}\n"
+                },
+                {
+                    "date": 1625201717382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     CommonModule,\n     FormsModule,\n     IonicModule,\n     OptionPagePageRoutingModule,\n+    \n   ],\n   declarations: [OptionPagePage]\n })\n export class OptionPagePageModule {}\n"
+                },
+                {
+                    "date": 1625201723500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     FormsModule,\n     IonicModule,\n     OptionPagePageRoutingModule,\n     HeaderModule,\n+    \n   ],\n   declarations: [OptionPagePage]\n })\n export class OptionPagePageModule {}\n"
+                },
+                {
+                    "date": 1625201723631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     FormsModule,\n     IonicModule,\n     OptionPagePageRoutingModule,\n     HeaderModule,\n+    \n   ],\n   declarations: [OptionPagePage]\n })\n export class OptionPagePageModule {}\n"
+                }
+            ],
+            "date": 1625201704768,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule } from '@angular/forms';\nH\nimport { IonicModule } from '@ionic/angular';\n\nimport { OptionPagePageRoutingModule } from './option-page-routing.module';\n\nimport { OptionPagePage } from './option-page.page';\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    IonicModule,\n    OptionPagePageRoutingModule\n  ],\n  declarations: [OptionPagePage]\n})\nexport class OptionPagePageModule {}\n"
+        }
+    ]
+}

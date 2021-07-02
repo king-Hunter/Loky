@@ -1,0 +1,15 @@
+<app-header title="Galeria"></app-header>
+
+<ion-content>
+  <ion-slides>
+    <ion-slide *ngFor="let item of data">
+      <div class="slide">
+        <h2>{{ item.author }}</h2>
+        <ion-button href="{{item.download_url}}" target="_blank" fill="clear"
+          >Ver Imagen <ion-icon slot="end" name="arrow-redo-sharp"></ion-icon
+        ></ion-button>
+        <img src="{{item.download_url}}" />
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

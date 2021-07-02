@@ -1,0 +1,42 @@
+{
+    "sourceFile": "app/core/page/header/header.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1625129398531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625129423947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   templateUrl: './header.page.html',\n   styleUrls: ['./header.page.scss'],\n })\n export class HeaderPage implements OnInit {\n+  \n   constructor() { }\n \n   ngOnInit() {\n   }\n"
+                },
+                {
+                    "date": 1625129440361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n-import { Component, OnInit } from '@angular/core';\n+import { Component, OnInit, } from '@angular/core';\n \n @Component({\n   selector: 'app-header',\n   templateUrl: './header.page.html',\n   styleUrls: ['./header.page.scss'],\n })\n export class HeaderPage implements OnInit {\n-  \n+  @Input() name: string;\n   constructor() { }\n \n   ngOnInit() {\n   }\n"
+                },
+                {
+                    "date": 1625129451324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Component, OnInit, } from '@angular/core';\n+import { Component, OnInit } from '@angular/core';\n \n @Component({\n   selector: 'app-header',\n   templateUrl: './header.page.html',\n"
+                },
+                {
+                    "date": 1625129467449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Component, OnInit } from '@angular/core';\n+import { Component, OnInit, } from '@angular/core';\n \n @Component({\n   selector: 'app-header',\n   templateUrl: './header.page.html',\n"
+                },
+                {
+                    "date": 1625129473387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Component, OnInit, } from '@angular/core';\n+import { Component, OnInit } from '@angular/core';\n \n @Component({\n   selector: 'app-header',\n   templateUrl: './header.page.html',\n"
+                },
+                {
+                    "date": 1625129484153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Component, OnInit } from '@angular/core';\n+import { Component, Input, OnInit } from '@angular/core';\n \n @Component({\n   selector: 'app-header',\n   templateUrl: './header.page.html',\n"
+                }
+            ],
+            "date": 1625129398531,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.page.html',\n  styleUrls: ['./header.page.scss'],\n})\nexport class HeaderPage implements OnInit {\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n"
+        }
+    ]
+}

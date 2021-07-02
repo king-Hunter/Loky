@@ -1,0 +1,42 @@
+{
+    "sourceFile": "app/module/page/user-page/user-page.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1625201394242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625201411852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { UserPagePageRoutingModule } from './user-page-routing.module';\n+\n+import { UserPagePage } from './user-page.page';\n+\n+import { HeaderModule } from './../../../core/component/header/header.module';\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    UserPagePageRoutingModule,\n+  ],\n+  declarations: [UserPagePage]\n+})\n+export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625201419946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,36 +8,18 @@\n \n import { UserPagePage } from './user-page.page';\n \n import { HeaderModule } from './../../../core/component/header/header.module';\n+import { RouterModule } from '@angular/router';\n \n @NgModule({\n   imports: [\n     CommonModule,\n     FormsModule,\n     IonicModule,\n     UserPagePageRoutingModule,\n+    HeaderModule,\n+    RouterModule.forChild([{ path: '', component: GalleryPagePage }]),\n   ],\n   declarations: [UserPagePage]\n })\n export class UserPagePageModule {}\n-import { NgModule } from '@angular/core';\n-import { CommonModule } from '@angular/common';\n-import { FormsModule } from '@angular/forms';\n-\n-import { IonicModule } from '@ionic/angular';\n-\n-import { UserPagePageRoutingModule } from './user-page-routing.module';\n-\n-import { UserPagePage } from './user-page.page';\n-\n-\n-@NgModule({\n-  imports: [\n-    CommonModule,\n-    FormsModule,\n-    IonicModule,\n-    UserPagePageRoutingModule\n-  ],\n-  declarations: [UserPagePage]\n-})\n-export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625201429637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { UserPagePageRoutingModule } from './user-page-routing.module';\n+\n+import { UserPagePage } from './user-page.page';\n+\n+import { HeaderModule } from './../../../core/component/header/header.module';\n+import { RouterModule } from '@angular/router';\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    UserPagePageRoutingModule,\n+    HeaderModule,\n+    RouterModule.forChild([{ path: '', component: UserPagePage }]),\n+  ],\n+  declarations: [UserPagePage]\n+})\n+export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625214930482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,32 +19,7 @@\n     UserPagePageRoutingModule,\n     HeaderModule,\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n-  declarations: [UserPagePage]\n+  declarations: [UserPagePage,]\n })\n export class UserPagePageModule {}\n-import { NgModule } from '@angular/core';\n-import { CommonModule } from '@angular/common';\n-import { FormsModule } from '@angular/forms';\n-\n-import { IonicModule } from '@ionic/angular';\n-\n-import { UserPagePageRoutingModule } from './user-page-routing.module';\n-\n-import { UserPagePage } from './user-page.page';\n-\n-import { HeaderModule } from './../../../core/component/header/header.module';\n-import { RouterModule } from '@angular/router';\n-\n-@NgModule({\n-  imports: [\n-    CommonModule,\n-    FormsModule,\n-    IonicModule,\n-    UserPagePageRoutingModule,\n-    HeaderModule,\n-    RouterModule.forChild([{ path: '', component: GalleryPagePage }]),\n-  ],\n-  declarations: [UserPagePage]\n-})\n-export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625214935685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n     UserPagePageRoutingModule,\n     HeaderModule,\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n-  declarations: [UserPagePage,]\n+  declarations: [UserPagePage, S]\n })\n export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625214942826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { UserPagePageRoutingModule } from './user-page-routing.module';\n+\n+import { UserPagePage } from './user-page.page';\n+\n+import { HeaderModule } from './../../../core/component/header/header.module';\n+import { RouterModule } from '@angular/router';\n+import { ShowInfoUserComponent } from '../../../core/component/show-info-user/show-info-user.component';\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    UserPagePageRoutingModule,\n+    HeaderModule,\n+    RouterModule.forChild([{ path: '', component: UserPagePage }]),\n+  ],\n+  declarations: [UserPagePage, ShowInfoUserComponent]\n+})\n+export class UserPagePageModule {}\n"
+                }
+            ],
+            "date": 1625201394242,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule } from '@angular/forms';\n\nimport { IonicModule } from '@ionic/angular';\n\nimport { UserPagePageRoutingModule } from './user-page-routing.module';\n\nimport { UserPagePage } from './user-page.page';\n\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    IonicModule,\n    UserPagePageRoutingModule\n  ],\n  declarations: [UserPagePage]\n})\nexport class UserPagePageModule {}\n"
+        }
+    ]
+}

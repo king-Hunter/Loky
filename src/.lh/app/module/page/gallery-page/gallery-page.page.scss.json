@@ -1,0 +1,34 @@
+{
+    "sourceFile": "app/module/page/gallery-page/gallery-page.page.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1625209721185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625210782811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,4 +30,5 @@\n \n     p b {\n       color: var(--ion-text-color, #000000);\n     }\n+    \n"
+                },
+                {
+                    "date": 1625210788008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+ ion-slides {\n+      height: 100%;\n+    }\n+\n+    .swiper-slide {\n+      display: block;\n+    }\n+\n+    .swiper-slide h2 {\n+      margin-top: 2.8rem;\n+    }\n+\n+    .swiper-slide img {\n+      max-height: 50%;\n+      max-width: 80%;\n+      margin: 60px 0 40px;\n+      pointer-events: none;\n+    }\n+\n+    b {\n+      font-weight: 500;\n+    }\n+\n+    p {\n+      padding: 0 40px;\n+      font-size: 14px;\n+      line-height: 1.5;\n+      color: var(--ion-color-step-600, #60646b);\n+    }\n+\n+    p b {\n+      color: var(--ion-text-color, #000000);\n+    }\n+    img {\n+        width: 300px;\n+    height: 200px;\n+    }\n"
+                },
+                {
+                    "date": 1625211500026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+ ion-slides {\n+      height: 100%;\n+    }\n+\n+    .swiper-slide {\n+      display: block;\n+    }\n+\n+    .swiper-slide h2 {\n+      margin-top: 2.8rem;\n+    }\n+\n+    .swiper-slide img {\n+      max-height: 50%;\n+      max-width: 80%;\n+      margin: 60px 0 40px;\n+      pointer-events: none;\n+    }\n+\n+    b {\n+      font-weight: 500;\n+    }\n+\n+    p {\n+      padding: 0 40px;\n+      font-size: 14px;\n+      line-height: 1.5;\n+      color: var(--ion-color-step-600, #60646b);\n+    }\n+\n+    p b {\n+      color: var(--ion-text-color, #000000);\n+    }\n+    \n"
+                },
+                {
+                    "date": 1625211705014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,76 +30,5 @@\n \n     p b {\n       color: var(--ion-text-color, #000000);\n     }\n-    \n- ion-slides {\n-      height: 100%;\n-    }\n \n-    .swiper-slide {\n-      display: block;\n-    }\n-\n-    .swiper-slide h2 {\n-      margin-top: 2.8rem;\n-    }\n-\n-    .swiper-slide img {\n-      max-height: 50%;\n-      max-width: 80%;\n-      margin: 60px 0 40px;\n-      pointer-events: none;\n-    }\n-\n-    b {\n-      font-weight: 500;\n-    }\n-\n-    p {\n-      padding: 0 40px;\n-      font-size: 14px;\n-      line-height: 1.5;\n-      color: var(--ion-color-step-600, #60646b);\n-    }\n-\n-    p b {\n-      color: var(--ion-text-color, #000000);\n-    }\n-    img {\n-        width: 300px;\n-    height: 200px;\n-    }\n- ion-slides {\n-      height: 100%;\n-    }\n-\n-    .swiper-slide {\n-      display: block;\n-    }\n-\n-    .swiper-slide h2 {\n-      margin-top: 2.8rem;\n-    }\n-\n-    .swiper-slide img {\n-      max-height: 50%;\n-      max-width: 80%;\n-      margin: 60px 0 40px;\n-      pointer-events: none;\n-    }\n-\n-    b {\n-      font-weight: 500;\n-    }\n-\n-    p {\n-      padding: 0 40px;\n-      font-size: 14px;\n-      line-height: 1.5;\n-      color: var(--ion-color-step-600, #60646b);\n-    }\n-\n-    p b {\n-      color: var(--ion-text-color, #000000);\n-    }\n-    \n"
+                }
+            ],
+            "date": 1625209721185,
+            "name": "Commit-0",
+            "content": " ion-slides {\n      height: 100%;\n    }\n\n    .swiper-slide {\n      display: block;\n    }\n\n    .swiper-slide h2 {\n      margin-top: 2.8rem;\n    }\n\n    .swiper-slide img {\n      max-height: 50%;\n      max-width: 80%;\n      margin: 60px 0 40px;\n      pointer-events: none;\n    }\n\n    b {\n      font-weight: 500;\n    }\n\n    p {\n      padding: 0 40px;\n      font-size: 14px;\n      line-height: 1.5;\n      color: var(--ion-color-step-600, #60646b);\n    }\n\n    p b {\n      color: var(--ion-text-color, #000000);\n    }\n"
+        }
+    ]
+}

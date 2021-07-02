@@ -1,0 +1,30 @@
+{
+    "sourceFile": "app/tabs/tabs-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625122730371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625122731164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     path: 'tabs',\n     component: TabsPage,\n     children: [\n       {\n-        path: 'u',\n+        path: '',\n         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)\n       },\n       {\n         path: 'tab2',\n"
+                },
+                {
+                    "date": 1625123471188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         path: 'comments',\n         loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)\n       },\n       {\n-        path: 'g',\n+        path: 'ga',\n         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)\n       },\n       {\n         path: '',\n"
+                },
+                {
+                    "date": 1625123471716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         path: 'comments',\n         loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)\n       },\n       {\n-        path: 'ga',\n+        path: 'gallry',\n         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)\n       },\n       {\n         path: '',\n"
+                }
+            ],
+            "date": 1625122730371,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { TabsPage } from './tabs.page';\n\nconst routes: Routes = [\n  {\n    path: 'tabs',\n    component: TabsPage,\n    children: [\n      {\n        path: 'u',\n        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)\n      },\n      {\n        path: 'tab2',\n        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)\n      },\n      {\n        path: 'tab3',\n        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)\n      },\n      {\n        path: '',\n        redirectTo: '/tabs/tab1',\n        pathMatch: 'full'\n      }\n    ]\n  },\n  {\n    path: '',\n    redirectTo: '/tabs/tab1',\n    pathMatch: 'full'\n  }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n})\nexport class TabsPageRoutingModule {}\n"
+        }
+    ]
+}

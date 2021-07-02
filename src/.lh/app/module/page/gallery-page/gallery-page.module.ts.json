@@ -1,0 +1,58 @@
+{
+    "sourceFile": "app/module/page/gallery-page/gallery-page.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1625133705861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625133713650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n \n import { GalleryPagePage } from './gallery-page.page';\n \n+import { h}\n \n @NgModule({\n   imports: [\n     CommonModule,\n"
+                },
+                {
+                    "date": 1625133714111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n \n import { GalleryPagePage } from './gallery-page.page';\n \n-import { h}\n+import { he}\n \n @NgModule({\n   imports: [\n     CommonModule,\n"
+                },
+                {
+                    "date": 1625133719886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+import { header }\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    GalleryPagePageRoutingModule\n+  ],\n+  declarations: [GalleryPagePage]\n+})\n+export class GalleryPagePageModule {}\n"
+                },
+                {
+                    "date": 1625133726871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import { HeaderPage } from './../../../core/page/header/header.page';\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    GalleryPagePageRoutingModule\n+  ],\n+  declarations: [GalleryPagePage]\n+})\n+export class GalleryPagePageModule {}\n"
+                },
+                {
+                    "date": 1625133736677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { HeaderPage } from './../../../core/page/header/header.pag';\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    GalleryPagePageRoutingModule\n+  ],\n+  declarations: [GalleryPagePage]\n+})\n+export class GalleryPagePageModule {}\n"
+                },
+                {
+                    "date": 1625133750290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,5 @@\n-import { HeaderPage } from './../../../core/page/header/header.pag';\n-import { NgModule } from '@angular/core';\n-import { CommonModule } from '@angular/common';\n-import { FormsModule } from '@angular/forms';\n \n-import { IonicModule } from '@ionic/angular';\n-\n-import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n-\n-import { GalleryPagePage } from './gallery-page.page';\n-\n-@NgModule({\n-  imports: [\n-    CommonModule,\n-    FormsModule,\n-    IonicModule,\n-    GalleryPagePageRoutingModule\n-  ],\n-  declarations: [GalleryPagePage]\n-})\n-export class GalleryPagePageModule {}\n-import { HeaderPage } from './../../../core/page/header/header.page';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { FormsModule } from '@angular/forms';\n \n@@ -29,10 +8,8 @@\n import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n \n import { GalleryPagePage } from './gallery-page.page';\n \n-\n-\n @NgModule({\n   imports: [\n     CommonModule,\n     FormsModule,\n@@ -41,48 +18,4 @@\n   ],\n   declarations: [GalleryPagePage]\n })\n export class GalleryPagePageModule {}\n-import { NgModule } from '@angular/core';\n-import { CommonModule } from '@angular/common';\n-import { FormsModule } from '@angular/forms';\n-\n-import { IonicModule } from '@ionic/angular';\n-\n-import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n-\n-import { GalleryPagePage } from './gallery-page.page';\n-\n-import { header }\n-\n-@NgModule({\n-  imports: [\n-    CommonModule,\n-    FormsModule,\n-    IonicModule,\n-    GalleryPagePageRoutingModule\n-  ],\n-  declarations: [GalleryPagePage]\n-})\n-export class GalleryPagePageModule {}\n-import { NgModule } from '@angular/core';\n-import { CommonModule } from '@angular/common';\n-import { FormsModule } from '@angular/forms';\n-\n-import { IonicModule } from '@ionic/angular';\n-\n-import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n-\n-import { GalleryPagePage } from './gallery-page.page';\n-\n-import { he}\n-\n-@NgModule({\n-  imports: [\n-    CommonModule,\n-    FormsModule,\n-    IonicModule,\n-    GalleryPagePageRoutingModule\n-  ],\n-  declarations: [GalleryPagePage]\n-})\n-export class GalleryPagePageModule {}\n"
+                },
+                {
+                    "date": 1625133757336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n \n import { GalleryPagePage } from './gallery-page.page';\n \n+\n @NgModule({\n   imports: [\n     CommonModule,\n     FormsModule,\n"
+                },
+                {
+                    "date": 1625133763948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+import { Header}\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    GalleryPagePageRoutingModule\n+  ],\n+  declarations: [GalleryPagePage]\n+})\n+export class GalleryPagePageModule {}\n"
+                },
+                {
+                    "date": 1625133772140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n \n import { GalleryPagePage } from './gallery-page.page';\n \n-import { Headerp}\n+import { Headerpa}\n \n @NgModule({\n   imports: [\n     CommonModule,\n"
+                },
+                {
+                    "date": 1625133791402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { HeaderPageModule } from './../../../core/page/header/header.module';\n+\n+import { NgModule } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { FormsModule } from '@angular/forms';\n+\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+@NgModule({\n+  imports: [\n+    CommonModule,\n+    FormsModule,\n+    IonicModule,\n+    GalleryPagePageRoutingModule\n+  ],\n+  declarations: [GalleryPagePage]\n+})\n+export class GalleryPagePageModule {}\n"
+                }
+            ],
+            "date": 1625133705861,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule } from '@angular/forms';\n\nimport { IonicModule } from '@ionic/angular';\n\nimport { GalleryPagePageRoutingModule } from './gallery-page-routing.module';\n\nimport { GalleryPagePage } from './gallery-page.page';\n\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    IonicModule,\n    GalleryPagePageRoutingModule\n  ],\n  declarations: [GalleryPagePage]\n})\nexport class GalleryPagePageModule {}\n"
+        }
+    ]
+}

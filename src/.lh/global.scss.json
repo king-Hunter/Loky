@@ -1,0 +1,30 @@
+{
+    "sourceFile": "global.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625203255989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625203261207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,4 +24,5 @@\n @import \"~@ionic/angular/css/text-alignment.css\";\n @import \"~@ionic/angular/css/text-transformation.css\";\n @import \"~@ionic/angular/css/flex-utils.css\";\n \n+.strong\n"
+                },
+                {
+                    "date": 1625203268381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,8 @@\n @import \"~@ionic/angular/css/text-alignment.css\";\n @import \"~@ionic/angular/css/text-transformation.css\";\n @import \"~@ionic/angular/css/flex-utils.css\";\n \n-.strong t{\n+.strong tex{\n       font-weight: bolder;\n     letter-spacing: 1px;\n }\n"
+                },
+                {
+                    "date": 1625203268533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+/*\n+ * App Global CSS\n+ * ----------------------------------------------------------------------------\n+ * Put style rules here that you want to apply globally. These styles are for\n+ * the entire app and not just one component. Additionally, this file can be\n+ * used as an entry point to import other CSS/Sass files to be included in the\n+ * output CSS.\n+ * For more information on global stylesheets, visit the documentation:\n+ * https://ionicframework.com/docs/layout/global-stylesheets\n+ */\n+\n+/* Core CSS required for Ionic components to work properly */\n+@import \"~@ionic/angular/css/core.css\";\n+\n+/* Basic CSS for apps built with Ionic */\n+@import \"~@ionic/angular/css/normalize.css\";\n+@import \"~@ionic/angular/css/structure.css\";\n+@import \"~@ionic/angular/css/typography.css\";\n+@import '~@ionic/angular/css/display.css';\n+\n+/* Optional CSS utils that can be commented out */\n+@import \"~@ionic/angular/css/padding.css\";\n+@import \"~@ionic/angular/css/float-elements.css\";\n+@import \"~@ionic/angular/css/text-alignment.css\";\n+@import \"~@ionic/angular/css/text-transformation.css\";\n+@import \"~@ionic/angular/css/flex-utils.css\";\n+\n+.strong {\n+      font-weight: bolder;\n+    letter-spacing: 1px;\n+}\n"
+                }
+            ],
+            "date": 1625203255989,
+            "name": "Commit-0",
+            "content": "/*\n * App Global CSS\n * ----------------------------------------------------------------------------\n * Put style rules here that you want to apply globally. These styles are for\n * the entire app and not just one component. Additionally, this file can be\n * used as an entry point to import other CSS/Sass files to be included in the\n * output CSS.\n * For more information on global stylesheets, visit the documentation:\n * https://ionicframework.com/docs/layout/global-stylesheets\n */\n\n/* Core CSS required for Ionic components to work properly */\n@import \"~@ionic/angular/css/core.css\";\n\n/* Basic CSS for apps built with Ionic */\n@import \"~@ionic/angular/css/normalize.css\";\n@import \"~@ionic/angular/css/structure.css\";\n@import \"~@ionic/angular/css/typography.css\";\n@import '~@ionic/angular/css/display.css';\n\n/* Optional CSS utils that can be commented out */\n@import \"~@ionic/angular/css/padding.css\";\n@import \"~@ionic/angular/css/float-elements.css\";\n@import \"~@ionic/angular/css/text-alignment.css\";\n@import \"~@ionic/angular/css/text-transformation.css\";\n@import \"~@ionic/angular/css/flex-utils.css\";\n\n"
+        }
+    ]
+}

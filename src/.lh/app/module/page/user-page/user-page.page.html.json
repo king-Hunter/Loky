@@ -1,0 +1,58 @@
+{
+    "sourceFile": "app/module/page/user-page/user-page.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1625135119509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625201498218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n+<app-header title=\"Galeria\"></app-header>\n \n-\n <ion-content>\n \n </ion-content>\n"
+                },
+                {
+                    "date": 1625204212462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-<app-header title=\"Galeria\"></app-header>\n+<app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n-\n </ion-content>\n"
+                },
+                {
+                    "date": 1625204260291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n <app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n+  \n </ion-content>\n"
+                },
+                {
+                    "date": 1625204274816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,21 @@\n <app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n-  \n+  <ion-list>\n+  <ion-item>\n+    <ion-label>Pokémon Yellow</ion-label>\n+  </ion-item>\n+  <ion-item>\n+    <ion-label>Mega Man X</ion-label>\n+  </ion-item>\n+  <ion-item>\n+    <ion-label>The Legend of Zelda</ion-label>\n+  </ion-item>\n+  <ion-item>\n+    <ion-label>Pac-Man</ion-label>\n+  </ion-item>\n+  <ion-item>\n+    <ion-label>Super Mario World</ion-label>\n+  </ion-item>\n+</ion-list>\n </ion-content>\n"
+                },
+                {
+                    "date": 1625204279995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<app-header title=\"Usuarios\"></app-header>\n+\n+<ion-content>\n+  <ion-list>\n+    <ion-item>\n+      <ion-label>Pokémon Yellow</ion-label>\n+    </ion-item>\n+    <ion-item>\n+      <ion-label>Mega Man X</ion-label>\n+    </ion-item>\n+    <ion-item>\n+      <ion-label>The Legend of Zelda</ion-label>\n+    </ion-item>\n+    <ion-item>\n+      <ion-label>Pac-Man</ion-label>\n+    </ion-item>\n+    <ion-item>\n+      <ion-label>Super Mario World</ion-label>\n+    </ion-item>\n+  </ion-list>\n+</ion-content>\n"
+                },
+                {
+                    "date": 1625204291913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,39 +4,7 @@\n   <ion-list>\n     <ion-item>\n       <ion-label>Pokémon Yellow</ion-label>\n     </ion-item>\n-    <ion-item>\n-      <ion-label>Mega Man X</ion-label>\n-    </ion-item>\n-    <ion-item>\n-      <ion-label>The Legend of Zelda</ion-label>\n-    </ion-item>\n-    <ion-item>\n-      <ion-label>Pac-Man</ion-label>\n-    </ion-item>\n-    <ion-item>\n-      <ion-label>Super Mario World</ion-label>\n-    </ion-item>\n+    \n   </ion-list>\n </ion-content>\n-<app-header title=\"Usuarios\"></app-header>\n-\n-<ion-content>\n-  <ion-list>\n-  <ion-item>\n-    <ion-label>Pokémon Yellow</ion-label>\n-  </ion-item>\n-  <ion-item>\n-    <ion-label>Mega Man X</ion-label>\n-  </ion-item>\n-  <ion-item>\n-    <ion-label>The Legend of Zelda</ion-label>\n-  </ion-item>\n-  <ion-item>\n-    <ion-label>Pac-Man</ion-label>\n-  </ion-item>\n-  <ion-item>\n-    <ion-label>Super Mario World</ion-label>\n-  </ion-item>\n-</ion-list>\n-</ion-content>\n"
+                },
+                {
+                    "date": 1625204312234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+<app-header title=\"Usuarios\"></app-header>\n+\n+<ion-content>\n+  \n+</ion-content>\n"
+                },
+                {
+                    "date": 1625212155301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,5 @@\n <app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n-  \n+  ç\n </ion-content>\n-<app-header title=\"Usuarios\"></app-header>\n-\n-<ion-content>\n-  <ion-list>\n-    <ion-item>\n-      <ion-label>Pokémon Yellow</ion-label>\n-    </ion-item>\n-    \n-  </ion-list>\n-</ion-content>\n"
+                },
+                {
+                    "date": 1625212160612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n <app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n-\n </ion-content>\n"
+                },
+                {
+                    "date": 1625212491416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+<app-header title=\"Usuarios\"></app-header>\n+\n+<ion-content>\n+  \n+</ion-content>\n"
+                }
+            ],
+            "date": 1625135119509,
+            "name": "Commit-0",
+            "content": "\n\n<ion-content>\n\n</ion-content>\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app/module/page/user-page/user-page.page.spec.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1625201472162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625201480411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   beforeEach(waitForAsync(() => {\n     TestBed.configureTestingModule({\n       declarations: [ UserPagePage ],\n-      imports: [IonicModule.forRoot()]\n+      imports: [IonicModule.forRoot(),]\n     }).compileComponents();\n \n     fixture = TestBed.createComponent(UserPagePage);\n     component = fixture.componentInstance;\n"
+                }
+            ],
+            "date": 1625201472162,
+            "name": "Commit-0",
+            "content": "import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\nimport { IonicModule } from '@ionic/angular';\nimport { HeaderModule } from './../../../core/component/header/header.module';\nimport { UserPagePage } from './user-page.page';\n\ndescribe('UserPagePage', () => {\n  let component: UserPagePage;\n  let fixture: ComponentFixture<UserPagePage>;\n\n  beforeEach(waitForAsync(() => {\n    TestBed.configureTestingModule({\n      declarations: [ UserPagePage ],\n      imports: [IonicModule.forRoot()]\n    }).compileComponents();\n\n    fixture = TestBed.createComponent(UserPagePage);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  }));\n\n  it('should create', () => {\n    expect(component).toBeTruthy();\n  });\n});\n"
+        }
+    ]
+}

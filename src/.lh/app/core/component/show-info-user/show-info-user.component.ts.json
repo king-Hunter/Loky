@@ -1,0 +1,46 @@
+{
+    "sourceFile": "app/core/component/show-info-user/show-info-user.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1625214481538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625214492318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import { Component, Input, OnInit } from '@angular/core';\n+\n+@Component({\n+  selector: 'app-show-info-user',\n+  templateUrl: './show-info-user.component.html',\n+  styleUrls: ['./show-info-user.component.scss'],\n+})\n+export class ShowInfoUserComponent implements OnInit {\n+@Input userData\n+  constructor() { }\n+\n+  ngOnInit() {}\n+\n+}\n"
+                },
+                {
+                    "date": 1625214514692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,24 +5,10 @@\n   templateUrl: './show-info-user.component.html',\n   styleUrls: ['./show-info-user.component.scss'],\n })\n export class ShowInfoUserComponent implements OnInit {\n-@Input userData\n+@Input puserData: any;\n   constructor() { }\n \n   ngOnInit() {}\n \n }\n-import { Component, OnInit } from '@angular/core';\n-\n-@Component({\n-  selector: 'app-show-info-user',\n-  templateUrl: './show-info-user.component.html',\n-  styleUrls: ['./show-info-user.component.scss'],\n-})\n-export class ShowInfoUserComponent implements OnInit {\n-@\n-  constructor() { }\n-\n-  ngOnInit() {}\n-\n-}\n"
+                },
+                {
+                    "date": 1625214524787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   templateUrl: './show-info-user.component.html',\n   styleUrls: ['./show-info-user.component.scss'],\n })\n export class ShowInfoUserComponent implements OnInit {\n-@Input puserData: any;\n+@(Input) public userData: any;\n   constructor() { }\n \n   ngOnInit() {}\n \n"
+                },
+                {
+                    "date": 1625214557226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n   templateUrl: './show-info-user.component.html',\n   styleUrls: ['./show-info-user.component.scss'],\n })\n export class ShowInfoUserComponent implements OnInit {\n-@(Input) public userData: any;\n+@Input() public userData: any;\n   constructor() { }\n \n   ngOnInit() {}\n-\n }\n"
+                },
+                {
+                    "date": 1625214562570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n @Input() public userData: any;\n   constructor() { }\n \n   ngOnInit() {}\n+  pu\n }\n"
+                },
+                {
+                    "date": 1625214563266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n @Input() public userData: any;\n   constructor() { }\n \n   ngOnInit() {}\n-  publi\n+  public\n }\n"
+                },
+                {
+                    "date": 1625214571598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n @Input() public userData: any;\n   constructor() { }\n \n   ngOnInit() {}\n-  public closeModa() {\n+  public closeModal() {\n     this.modalCtrl.dismiss();\n   }\n }\n"
+                }
+            ],
+            "date": 1625214481538,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-show-info-user',\n  templateUrl: './show-info-user.component.html',\n  styleUrls: ['./show-info-user.component.scss'],\n})\nexport class ShowInfoUserComponent implements OnInit {\n@\n  constructor() { }\n\n  ngOnInit() {}\n\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+<app-header title="Lista de Opciones"></app-header>
+
+<ion-content>
+  <ion-list>
+    <h2 class="textCenter">Todos</h2>
+    <ion-item *ngFor="let item of data">
+      <ion-label>
+        <h2>{{item.title}}</h2>
+      </ion-label>
+      <ion-chip slot="end" color="{{item.completedColor}}">
+        <ion-label>{{item.completedLabel}}</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
+</ion-content>

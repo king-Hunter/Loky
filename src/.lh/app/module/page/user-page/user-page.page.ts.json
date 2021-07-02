@@ -1,0 +1,54 @@
+{
+    "sourceFile": "app/module/page/user-page/user-page.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1625213569631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625213569732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n \n-  constructor(toa) { }\n+  constructor(toas) { }\n \n   ngOnInit() {\n   }\n \n"
+                },
+                {
+                    "date": 1625213575708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\n import { Component, OnInit } from '@angular/core';\n \n @Component({\n   selector: 'app-user-page',\n@@ -6,9 +7,9 @@\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n \n-  constructor(toas) { }\n+  constructor(prToastNotificationsService) { }\n \n   ngOnInit() {\n   }\n \n"
+                },
+                {
+                    "date": 1625213581867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n \n-  constructor(prToastNotificationsService) { }\n+  constructor(private t:ToastNotificationsService) { }\n \n   ngOnInit() {\n   }\n \n"
+                },
+                {
+                    "date": 1625213590914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n \n-  constructor(private t:ToastNotificationsService) { }\n+  constructor(private toastNof:ToastNotificationsService) { }\n \n   ngOnInit() {\n   }\n \n"
+                },
+                {
+                    "date": 1625213598019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n \n-  constructor(private toastNof:ToastNotificationsService) { }\n+  constructor(private toastNotificationS:ToastNotificationsService) { }\n \n   ngOnInit() {\n   }\n \n"
+                },
+                {
+                    "date": 1625213603679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\n+import { Component, OnInit } from '@angular/core';\n+\n+@Component({\n+  selector: 'app-user-page',\n+  templateUrl: './user-page.page.html',\n+  styleUrls: ['./user-page.page.scss'],\n+})\n+export class UserPagePage implements OnInit {\n+\n+  constructor(private toastNotificationService:ToastNotificationsService) { }\n+\n+  ngOnInit() {\n+  }\n+}\n"
+                },
+                {
+                    "date": 1625213610716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,26 +6,8 @@\n   templateUrl: './user-page.page.html',\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n+  constructor(private toastNotificationService: ToastNotificationsService) {}\n \n-  constructor(private toastNotificationService:ToastNotificationsService) { }\n-\n-  ngOnInit() {\n-  }\n+  ngOnInit() {}\n }\n-import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\n-import { Component, OnInit } from '@angular/core';\n-\n-@Component({\n-  selector: 'app-user-page',\n-  templateUrl: './user-page.page.html',\n-  styleUrls: ['./user-page.page.scss'],\n-})\n-export class UserPagePage implements OnInit {\n-\n-  constructor(private toastNotificationS:ToastNotificationsService) { }\n-\n-  ngOnInit() {\n-  }\n-\n-}\n"
+                },
+                {
+                    "date": 1625213615796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   templateUrl: './user-page.page.html',\n   styleUrls: ['./user-page.page.scss'],\n })\n export class UserPagePage implements OnInit {\n-  constructor(private toastNotificationService: ToastNotificationsService, p) {}\n+  constructor(private toastNotificationService: ToastNotificationsService, ) {}\n \n   ngOnInit() {}\n }\n"
+                },
+                {
+                    "date": 1625213622741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\n+import { Component, OnInit } from '@angular/core';\n+\n+@Component({\n+  selector: 'app-user-page',\n+  templateUrl: './user-page.page.html',\n+  styleUrls: ['./user-page.page.scss'],\n+})\n+export class UserPagePage implements OnInit {\n+  constructor(private toastNotificationService: ToastNotificationsService, private) {}\n+\n+  ngOnInit() {}\n+}\n"
+                }
+            ],
+            "date": 1625213569631,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-user-page',\n  templateUrl: './user-page.page.html',\n  styleUrls: ['./user-page.page.scss'],\n})\nexport class UserPagePage implements OnInit {\n\n  constructor(toa) { }\n\n  ngOnInit() {\n  }\n\n}\n"
+        }
+    ]
+}

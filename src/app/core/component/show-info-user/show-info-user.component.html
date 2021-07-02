@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title class="bolderText">Información de usuario</ion-title>
+    <ion-buttons (click)="closeModal()" slot="end">
+      <ion-button>
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ios hydrated">
+    <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+    <ion-card-header class="ion-inherit-color ios hydrated">
+      <ion-card-subtitle
+        role="heading"
+        aria-level="3"
+        class="ion-inherit-color ios hydrated"
+        >{{ userData.name }}
+      </ion-card-subtitle>
+      <ion-card-title
+        role="heading"
+        aria-level="2"
+        class="ion-inherit-color ios hydrated"
+        >{{ userData.username }}</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content class="ios card-content-ios hydrated">
+      <ion-badge color="secondary">Dirección </ion-badge>
+      <p>Calle {{ userData.address.street }} {{ userData.address.suite }}</p>
+      <p>Ciudad {{ userData.address.city }}</p>
+      <p>C.P. {{ userData.address.zipcode }}</p>
+      <ion-badge color="secondary">Telefono </ion-badge>
+      <p>{{ userData.phone }}</p>
+      <ion-badge color="secondary">Compañía </ion-badge>
+      <p>{{ userData.company.name }}</p>
+      <p>{{ userData.company.catchPhrase }}</p>
+      <p>{{ userData.company.bs }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

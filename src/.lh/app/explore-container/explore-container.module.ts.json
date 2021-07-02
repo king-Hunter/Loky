@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app/explore-container/explore-container.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1625200199511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625200791982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { FormsModule } from '@angular/forms';\n+\n import { IonicModule } from '@ionic/angular';\n+\n import { ExploreContainerComponent } from './explore-container.component';\n+\n @NgModule({\n   imports: [ CommonModule, FormsModule, IonicModule],\n   declarations: [ExploreContainerComponent],\n   exports: [ExploreContainerComponent]\n"
+                }
+            ],
+            "date": 1625200199511,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule } from '@angular/forms';\nimport { IonicModule } from '@ionic/angular';\n\nimport { ExploreContainerComponent } from './explore-container.component';\n\n@NgModule({\n  imports: [ CommonModule, FormsModule, IonicModule],\n  declarations: [ExploreContainerComponent],\n  exports: [ExploreContainerComponent]\n})\nexport class ExploreContainerComponentModule {}\n"
+        }
+    ]
+}

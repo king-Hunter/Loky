@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/core/page/tabs-page/tabs-page.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1625132942869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625133106647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <ion-tabs>\n \n   <ion-tab-bar slot=\"bottom\">\n \n-    <ion-tab-button tab=\"op\">\n+    <ion-tab-button tab=\"opt\">\n     <ion-icon name=\"options-outline\"></ion-icon>\n       <ion-label>Options</ion-label>\n     </ion-tab-button>\n \n"
+                },
+                {
+                    "date": 1625133112568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<ion-tabs>\n+\n+  <ion-tab-bar slot=\"bottom\">\n+\n+    <ion-tab-button tab=\"options\">\n+    <ion-icon name=\"options-outline\"></ion-icon>\n+      <ion-label>Options</ion-label>\n+    </ion-tab-button>\n+\n+    <ion-tab-button tab=\"user\">\n+      <ion-icon name=\"people-outline\"></ion-icon>\n+      <ion-label>User</ion-label>\n+    </ion-tab-button>\n+\n+    <ion-tab-button tab=\"tab3\">\n+      <ion-icon name=\"images-outline\"></ion-icon>\n+      <ion-label>Gallery</ion-label>\n+    </ion-tab-button>\n+  </ion-tab-bar>\n+\n+</ion-tabs>\n"
+                }
+            ],
+            "date": 1625132942869,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

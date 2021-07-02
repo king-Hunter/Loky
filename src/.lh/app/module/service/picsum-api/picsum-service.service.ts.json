@@ -1,0 +1,66 @@
+{
+    "sourceFile": "app/module/service/picsum-api/picsum-service.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1625209952972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625209958825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n @Injectable({\n   providedIn: 'root'\n })\n export class PicsumServiceService {\n+  public url \n   constructor() { }\n }\n"
+                },
+                {
+                    "date": 1625209965178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @Injectable({\n   providedIn: 'root'\n })\n export class PicsumServiceService {\n-  public url \n+  public url = `https://picsum.photos/v2/list`\n   constructor() { }\n }\n"
+                },
+                {
+                    "date": 1625209978735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n import { Injectable } from '@angular/core';\n+import { HttpClient } from '@angular/common/http';\n+import { Observable } from 'rxjs';\n+import { map } from 'rxjs/operators';\n \n @Injectable({\n   providedIn: 'root'\n })\n export class PicsumServiceService {\n-  public url = `https://picsum.photos/v2/list`\n+  public url = `https://picsum.photos/v2/list`;\n   constructor() { }\n }\n"
+                },
+                {
+                    "date": 1625209988260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import { Injectable } from '@angular/core';\n+import { HttpClient } from '@angular/common/http';\n+import { Observable } from 'rxjs';\n+import { map } from 'rxjs/operators';\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class PicsumServiceService {\n+  public url = `https://picsum.photos/v2/list`;\n+  constructor(private httpClient: HttpClient) {}\n+}\n"
+                },
+                {
+                    "date": 1625210000813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,17 +8,6 @@\n })\n export class PicsumServiceService {\n   public url = `https://picsum.photos/v2/list`;\n   constructor(private httpClient: HttpClient) {}\n+  \n }\n-import { Injectable } from '@angular/core';\n-import { HttpClient } from '@angular/common/http';\n-import { Observable } from 'rxjs';\n-import { map } from 'rxjs/operators';\n-\n-@Injectable({\n-  providedIn: 'root'\n-})\n-export class PicsumServiceService {\n-  public url = `https://picsum.photos/v2/list`;\n-  constructor() { }\n-}\n"
+                },
+                {
+                    "date": 1625210010666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,13 @@\n })\n export class PicsumServiceService {\n   public url = `https://picsum.photos/v2/list`;\n   constructor(private httpClient: HttpClient) {}\n-  \n+\n+  public getAl(): Observable<any> {\n+    return this.httpClient.get(this.url).pipe(\n+      map((data) => {\n+        return data;\n+      })\n+    );\n+  }\n }\n"
+                },
+                {
+                    "date": 1625210010848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n export class PicsumServiceService {\n   public url = `https://picsum.photos/v2/list`;\n   constructor(private httpClient: HttpClient) {}\n \n-  public getAl(): Observable<any> {\n+  public getA(): Observable<any> {\n     return this.httpClient.get(this.url).pipe(\n       map((data) => {\n         return data;\n       })\n"
+                },
+                {
+                    "date": 1625210020099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,15 @@\n import { Observable } from 'rxjs';\n import { map } from 'rxjs/operators';\n \n @Injectable({\n-  providedIn: 'root'\n+  providedIn: 'root',\n })\n export class PicsumServiceService {\n   public url = `https://picsum.photos/v2/list`;\n   constructor(private httpClient: HttpClient) {}\n \n-  public getA(): Observable<any> {\n+  public getGallery(): Observable<any> {\n     return this.httpClient.get(this.url).pipe(\n       map((data) => {\n         return data;\n       })\n"
+                },
+                {
+                    "date": 1625210453724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   providedIn: 'root',\n })\n export class PicsumServiceService {\n   public url = `https://picsum.photos/v2/list`;\n+  public url = `https://picsum.photos/v2/list`;\n   constructor(private httpClient: HttpClient) {}\n \n   public getGallery(): Observable<any> {\n     return this.httpClient.get(this.url).pipe(\n"
+                },
+                {
+                    "date": 1625210461830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   providedIn: 'root',\n })\n export class PicsumServiceService {\n   public url = `https://picsum.photos/v2/list`;\n-  public url = `https://picsum.photos/v2/list`;\n+  public url = `https://picsum.photos/v2/list?page=2&limit=10`;\n   constructor(private httpClient: HttpClient) {}\n \n   public getGallery(): Observable<any> {\n     return this.httpClient.get(this.url).pipe(\n"
+                },
+                {
+                    "date": 1625210468839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   public urlLimit = `https://picsum.photos/v2/list?page=2&limit=10`;\n   constructor(private httpClient: HttpClient) {}\n \n   public getGallery(): Observable<any> {\n-    return this.httpClient.get(this.url).pipe(\n+    return this.httpClient.get(this.urlLimit).pipe(\n       map((data) => {\n         return data;\n       })\n     );\n"
+                },
+                {
+                    "date": 1625211542237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { Injectable } from '@angular/core';\n+import { HttpClient } from '@angular/common/http';\n+import { Observable } from 'rxjs';\n+import { map } from 'rxjs/operators';\n+\n+@Injectable({\n+  providedIn: 'root',\n+})\n+export class PicsumServiceService {\n+  public url = `https://picsum.photos/v2/list`;\n+  public urlLimit = `https://picsum.photos/v2/list?page=2&limit=10`;\n+  public urlLimit = `https://picsum.photos/v2/list?page=2&limit=1`;\n+  constructor(private httpClient: HttpClient) {}\n+\n+  public getGallery(): Observable<any> {\n+    return this.httpClient.get(this.urlLimit).pipe(\n+      map((data) => {\n+        return data;\n+      })\n+    );\n+  }\n+}\n"
+                }
+            ],
+            "date": 1625209952972,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class PicsumServiceService {\n  constructor() { }\n}\n"
+        }
+    ]
+}

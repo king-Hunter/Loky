@@ -1,0 +1,90 @@
+{
+    "sourceFile": "app/module/service/jsonplaceholder-api/jsonplaceholder-service.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1625205991593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625205992038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import { Injectable } from '@angular/core';\n+import {HttpClient} from '@angular/common/http';\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class JsonplaceholderServiceService {\n+\n+  constructor() { }\n+}\n"
+                },
+                {
+                    "date": 1625205998601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,10 @@\n import { Injectable } from '@angular/core';\n import {HttpClient} from '@angular/common/http';\n-\n+import {Observable, from} from 'rxjs';\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n \n   constructor() { }\n }\n-import { Injectable } from '@angular/core';\n-import {HttpClient} from '@angular/common/http';\n-@Injectable({\n-  providedIn: 'root'\n-})\n-export class JsonplaceholderServiceService {\n-\n-  constructor() { }\n-}\n"
+                },
+                {
+                    "date": 1625206005614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { Injectable } from '@angular/core';\n import {HttpClient} from '@angular/common/http';\n import {Observable, from} from 'rxjs';\n+import { HTTP } from '@ionic-native/http/ngx';\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n"
+                },
+                {
+                    "date": 1625206023024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,14 @@\n import { Injectable } from '@angular/core';\n import {HttpClient} from '@angular/common/http';\n import {Observable, from} from 'rxjs';\n import { HTTP } from '@ionic-native/http/ngx';\n+\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n \n-  constructor() { }\n+  constructor(\n+    \n+  ) { }\n }\n"
+                },
+                {
+                    "date": 1625206028867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n })\n export class JsonplaceholderServiceService {\n \n   constructor(\n-    \n+    private httpC: HttpClient,\n+    private http: HTTP\n   ) { }\n }\n"
+                },
+                {
+                    "date": 1625206029140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import { Injectable } from '@angular/core';\n+import {HttpClient} from '@angular/common/http';\n+import {Observable, from} from 'rxjs';\n+import { HTTP } from '@ionic-native/http/ngx';\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class JsonplaceholderServiceService {\n+\n+  constructor(\n+    private httpCl: HttpClient,\n+    private http: HTTP\n+  ) { }\n+}\n"
+                },
+                {
+                    "date": 1625206043674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import { Injectable } from '@angular/core';\n+import {HttpClient} from '@angular/common/http';\n+import {Observable, from} from 'rxjs';\n+import { HTTP } from '@ionic-native/http/ngx';\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class JsonplaceholderServiceService {\n+\n+  constructor(\n+    private httpClient: HttpClient,\n+    private http: HTTP\n+  ) { }\n+\n+}\n"
+                },
+                {
+                    "date": 1625206055305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,35 +12,14 @@\n     private httpClient: HttpClient,\n     private http: HTTP\n   ) { }\n \n+ public getEstadosWS(): Observable<any> {\n+    return this.h.post(\n+      `${this.url}api/catalogo/estado/list`,\n+      {},\n+      {headers: AppSettings.getHeaders()}\n+    ).pipe(map(data => {\n+      return data;\n+    }));\n+  }\n }\n-import { Injectable } from '@angular/core';\n-import {HttpClient} from '@angular/common/http';\n-import {Observable, from} from 'rxjs';\n-import { HTTP } from '@ionic-native/http/ngx';\n-\n-@Injectable({\n-  providedIn: 'root'\n-})\n-export class JsonplaceholderServiceService {\n-\n-  constructor(\n-    private httpCl: HttpClient,\n-    private http: HTTP\n-  ) { }\n-}\n-import { Injectable } from '@angular/core';\n-import {HttpClient} from '@angular/common/http';\n-import {Observable, from} from 'rxjs';\n-import { HTTP } from '@ionic-native/http/ngx';\n-\n-@Injectable({\n-  providedIn: 'root'\n-})\n-export class JsonplaceholderServiceService {\n-\n-  constructor(\n-    private httpC: HttpClient,\n-    private http: HTTP\n-  ) { }\n-}\n"
+                },
+                {
+                    "date": 1625206055464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.h.post(\n+    return this.http.post(\n       `${this.url}api/catalogo/estado/list`,\n       {},\n       {headers: AppSettings.getHeaders()}\n     ).pipe(map(data => {\n"
+                },
+                {
+                    "date": 1625206108660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.http.post(\n+    return this.httpClient.(\n       `${this.url}api/catalogo/estado/list`,\n       {},\n       {headers: AppSettings.getHeaders()}\n     ).pipe(map(data => {\n"
+                },
+                {
+                    "date": 1625206115223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,9 @@\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.httpClient.(\n-      `${this.url}api/catalogo/estado/list`,\n-      {},\n-      {headers: AppSettings.getHeaders()}\n+    return this.httpClient.get(\n     ).pipe(map(data => {\n       return data;\n     }));\n   }\n"
+                },
+                {
+                    "date": 1625206127085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,9 @@\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.httpClient.get(\n-    ).pipe(map(data => {\n+    return this.httpClient.get('').pipe(map(data => {\n       return data;\n     }));\n   }\n }\n"
+                },
+                {
+                    "date": 1625206141437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,16 @@\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n-\n+p\n   constructor(\n     private httpClient: HttpClient,\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.httpClient.get('').pipe(map(data => {\n+    return this.httpClient.get('https://jsonplaceholder.typicode.com/todos').pipe(map(data => {\n       return data;\n     }));\n   }\n }\n"
+                },
+                {
+                    "date": 1625206146805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n-p\n+public url = \n   constructor(\n     private httpClient: HttpClient,\n     private http: HTTP\n   ) { }\n"
+                },
+                {
+                    "date": 1625206156376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n-public url = \n+public url = ``\n   constructor(\n     private httpClient: HttpClient,\n     private http: HTTP\n   ) { }\n"
+                },
+                {
+                    "date": 1625206167141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,16 @@\n @Injectable({\n   providedIn: 'root'\n })\n export class JsonplaceholderServiceService {\n-public url = ``\n+public url = `https://jsonplaceholder.typicode.com/todos`;\n   constructor(\n     private httpClient: HttpClient,\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.httpClient.get('https://jsonplaceholder.typicode.com/todos').pipe(map(data => {\n+    return this.httpClient.get().pipe(map(data => {\n       return data;\n     }));\n   }\n }\n"
+                },
+                {
+                    "date": 1625206177594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     private http: HTTP\n   ) { }\n \n  public getEstadosWS(): Observable<any> {\n-    return this.httpClient.get(turl).pipe(map(data => {\n+    return this.httpClient.get(thiurl).pipe(map(data => {\n       return data;\n     }));\n   }\n }\n"
+                },
+                {
+                    "date": 1625206212130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { Injectable } from '@angular/core';\n+import {HttpClient} from '@angular/common/http';\n+import {Observable, from} from 'rxjs';\n+çimport {map} from 'rxjs/operators';\n+import { HTTP } from '@ionic-native/http/ngx';\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class JsonplaceholderServiceService {\n+public url = `https://jsonplaceholder.typicode.com/todos`;\n+  constructor(\n+    private httpClient: HttpClient,\n+    private http: HTTP\n+  ) { }\n+\n+ public getEstadosWS(): Observable<any> {\n+    return this.httpClient.get(this.url).pipe(map(data => {\n+      return data;\n+    }));\n+  }\n+}\n"
+                }
+            ],
+            "date": 1625205991593,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\nimport {HttpClient} from '@angular/common/http';\n@Injectable({\n  providedIn: 'root'\n})\nexport class JsonplaceholderServiceService {\n\n  constructor() { }\n}\n"
+        }
+    ]
+}

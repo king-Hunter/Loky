@@ -1,0 +1,38 @@
+{
+    "sourceFile": "app/tab3/tab3.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1625123013582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625123026995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+<ion-header [translucent]=\"true\">\n+  <ion-toolbar>\n+    <ion-title>\n+      Tab 3\n+    </ion-title>\n+  </ion-toolbar>\n+</ion-header>\n+\n+<ion-content [fullscreen]=\"true\">\n+  ic\n+  <ion-header collapse=\"condense\">\n+    <ion-toolbar>\n+      <ion-title size=\"large\">Tab 3</ion-title>\n+    </ion-toolbar>\n+  </ion-header>\n+\n+  <app-explore-container name=\"Tab 3 page\"></app-explore-container>\n+</ion-content>\n"
+                },
+                {
+                    "date": 1625123027148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,31 +6,13 @@\n   </ion-toolbar>\n </ion-header>\n \n <ion-content [fullscreen]=\"true\">\n-  ic\n+  i\n   <ion-header collapse=\"condense\">\n     <ion-toolbar>\n       <ion-title size=\"large\">Tab 3</ion-title>\n     </ion-toolbar>\n   </ion-header>\n \n   <app-explore-container name=\"Tab 3 page\"></app-explore-container>\n </ion-content>\n-<ion-header [translucent]=\"true\">\n-  <ion-toolbar>\n-    <ion-title>\n-      Tab 3\n-    </ion-title>\n-  </ion-toolbar>\n-</ion-header>\n-\n-<ion-content [fullscreen]=\"true\">\n-  \n-  <ion-header collapse=\"condense\">\n-    <ion-toolbar>\n-      <ion-title size=\"large\">Tab 3</ion-title>\n-    </ion-toolbar>\n-  </ion-header>\n-\n-  <app-explore-container name=\"Tab 3 page\"></app-explore-container>\n-</ion-content>\n"
+                },
+                {
+                    "date": 1625123033539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </ion-toolbar>\n </ion-header>\n \n <ion-content [fullscreen]=\"true\">\n-  i\n+  \n   <ion-header collapse=\"condense\">\n     <ion-toolbar>\n       <ion-title size=\"large\">Tab 3</ion-title>\n     </ion-toolbar>\n"
+                },
+                {
+                    "date": 1625123451277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </ion-toolbar>\n </ion-header>\n \n <ion-content [fullscreen]=\"true\">\n-  \n+\n   <ion-header collapse=\"condense\">\n     <ion-toolbar>\n       <ion-title size=\"large\">Tab 3</ion-title>\n     </ion-toolbar>\n"
+                },
+                {
+                    "date": 1625123456671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n   </ion-toolbar>\n </ion-header>\n \n <ion-content [fullscreen]=\"true\">\n-\n   <ion-header collapse=\"condense\">\n     <ion-toolbar>\n       <ion-title size=\"large\">Tab 3</ion-title>\n     </ion-toolbar>\n"
+                }
+            ],
+            "date": 1625123013582,
+            "name": "Commit-0",
+            "content": "<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Tab 3\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  \n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Tab 3</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <app-explore-container name=\"Tab 3 page\"></app-explore-container>\n</ion-content>\n"
+        }
+    ]
+}

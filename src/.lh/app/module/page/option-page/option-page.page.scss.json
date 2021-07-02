@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/module/page/option-page/option-page.page.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1625209390988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625209447858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,1 @@\n \n-tex\n"
+                },
+                {
+                    "date": 1625209453538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-.textCente\n+.textCenter\n"
+                }
+            ],
+            "date": 1625209390988,
+            "name": "Commit-0",
+            "content": ".\n"
+        }
+    ]
+}

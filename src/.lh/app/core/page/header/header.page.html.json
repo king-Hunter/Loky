@@ -1,0 +1,30 @@
+{
+    "sourceFile": "app/core/page/header/header.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625129319103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625129325185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+<ion-header >\n+  <ion-toolbar>\n+    <ion-title>\n+      Tab 1\n+    </ion-title>\n+  </ion-toolbar>\n+</ion-header>\n"
+                },
+                {
+                    "date": 1625129372465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <ion-header >\n   <ion-toolbar>\n     <ion-title>\n-      Tab 1\n+      \n     </ion-title>\n   </ion-toolbar>\n </ion-header>\n"
+                },
+                {
+                    "date": 1625129377672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <ion-header >\n   <ion-toolbar>\n     <ion-title>\n-      \n+      {{ tot }}\n     </ion-title>\n   </ion-toolbar>\n </ion-header>\n"
+                }
+            ],
+            "date": 1625129319103,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

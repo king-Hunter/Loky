@@ -1,0 +1,58 @@
+{
+    "sourceFile": "app/module/page/gallery-page/gallery-page.page.spec.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1625134051879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625134059086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n+import {H }\n \n-\n import { GalleryPagePage } from './gallery-page.page';\n \n describe('GalleryPagePage', () => {\n   let component: GalleryPagePage;\n"
+                },
+                {
+                    "date": 1625134071634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n+import { HeaderPageModule } from './../../../core/page/header/header.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n-import {H }\n+import {HeaderPageModule }\n \n import { GalleryPagePage } from './gallery-page.page';\n \n describe('GalleryPagePage', () => {\n"
+                },
+                {
+                    "date": 1625134077459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n-import { HeaderPageModule } from './../../../core/page/header/header.module';\n+import { HeaderPageModule } from './../../../core/page/header-/header.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n-import {HeaderPageModule }\n \n import { GalleryPagePage } from './gallery-page.page';\n \n describe('GalleryPagePage', () => {\n"
+                },
+                {
+                    "date": 1625134084550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import { HeaderPageModul } from './../../../core/page/header-page/header.module';\n+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+describe('GalleryPagePage', () => {\n+  let component: GalleryPagePage;\n+  let fixture: ComponentFixture<GalleryPagePage>;\n+\n+  beforeEach(waitForAsync(() => {\n+    TestBed.configureTestingModule({\n+      declarations: [ GalleryPagePage ],\n+      imports: [IonicModule.forRoot()]\n+    }).compileComponents();\n+\n+    fixture = TestBed.createComponent(GalleryPagePage);\n+    component = fixture.componentInstance;\n+    fixture.detectChanges();\n+  }));\n+\n+  it('should create', () => {\n+    expect(component).toBeTruthy();\n+  });\n+});\n"
+                },
+                {
+                    "date": 1625134090134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { HeaderPageModul } from './../../../core/page/header-page/header.module';\n+import { He } from './../../../core/page/header-page/header.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n \n import { GalleryPagePage } from './gallery-page.page';\n@@ -22,29 +22,4 @@\n   it('should create', () => {\n     expect(component).toBeTruthy();\n   });\n });\n-import { HeaderPageModule } from './../../../core/page/header-/header.module';\n-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n-import { IonicModule } from '@ionic/angular';\n-\n-import { GalleryPagePage } from './gallery-page.page';\n-\n-describe('GalleryPagePage', () => {\n-  let component: GalleryPagePage;\n-  let fixture: ComponentFixture<GalleryPagePage>;\n-\n-  beforeEach(waitForAsync(() => {\n-    TestBed.configureTestingModule({\n-      declarations: [ GalleryPagePage ],\n-      imports: [IonicModule.forRoot()]\n-    }).compileComponents();\n-\n-    fixture = TestBed.createComponent(GalleryPagePage);\n-    component = fixture.componentInstance;\n-    fixture.detectChanges();\n-  }));\n-\n-  it('should create', () => {\n-    expect(component).toBeTruthy();\n-  });\n-});\n"
+                },
+                {
+                    "date": 1625134096587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+\n+import { HeaderPageModule } from './../../../core/page/header-page/header.module';\n+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+describe('GalleryPagePage', () => {\n+  let component: GalleryPagePage;\n+  let fixture: ComponentFixture<GalleryPagePage>;\n+\n+  beforeEach(waitForAsync(() => {\n+    TestBed.configureTestingModule({\n+      declarations: [ GalleryPagePage ],\n+      imports: [IonicModule.forRoot()]\n+    }).compileComponents();\n+\n+    fixture = TestBed.createComponent(GalleryPagePage);\n+    component = fixture.componentInstance;\n+    fixture.detectChanges();\n+  }));\n+\n+  it('should create', () => {\n+    expect(component).toBeTruthy();\n+  });\n+});\n"
+                },
+                {
+                    "date": 1625134110565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\n import { HeaderPageModule } from './../../../core/page/header-page/header.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n \n@@ -11,9 +10,9 @@\n \n   beforeEach(waitForAsync(() => {\n     TestBed.configureTestingModule({\n       declarations: [ GalleryPagePage ],\n-      imports: [IonicModule.forRoot()]\n+      imports: [IonicModule.forRoot(),]\n     }).compileComponents();\n \n     fixture = TestBed.createComponent(GalleryPagePage);\n     component = fixture.componentInstance;\n@@ -23,29 +22,4 @@\n   it('should create', () => {\n     expect(component).toBeTruthy();\n   });\n });\n-import { He } from './../../../core/page/header-page/header.module';\n-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n-import { IonicModule } from '@ionic/angular';\n-\n-import { GalleryPagePage } from './gallery-page.page';\n-\n-describe('GalleryPagePage', () => {\n-  let component: GalleryPagePage;\n-  let fixture: ComponentFixture<GalleryPagePage>;\n-\n-  beforeEach(waitForAsync(() => {\n-    TestBed.configureTestingModule({\n-      declarations: [ GalleryPagePage ],\n-      imports: [IonicModule.forRoot()]\n-    }).compileComponents();\n-\n-    fixture = TestBed.createComponent(GalleryPagePage);\n-    component = fixture.componentInstance;\n-    fixture.detectChanges();\n-  }));\n-\n-  it('should create', () => {\n-    expect(component).toBeTruthy();\n-  });\n-});\n"
+                },
+                {
+                    "date": 1625134121102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import { HeaderPageModule } from './../../../core';\n+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+describe('GalleryPagePage', () => {\n+  let component: GalleryPagePage;\n+  let fixture: ComponentFixture<GalleryPagePage>;\n+\n+  beforeEach(waitForAsync(() => {\n+    TestBed.configureTestingModule({\n+      declarations: [ GalleryPagePage ],\n+      imports: [IonicModule.forRoot(), HeaderPageModule]\n+    }).compileComponents();\n+\n+    fixture = TestBed.createComponent(GalleryPagePage);\n+    component = fixture.componentInstance;\n+    fixture.detectChanges();\n+  }));\n+\n+  it('should create', () => {\n+    expect(component).toBeTruthy();\n+  });\n+});\n"
+                },
+                {
+                    "date": 1625134126851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { HeaderPageModule } from './../../../core/page/';\n+import { HeaderPageModule } from './../../../core/page/header-page/';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n \n import { GalleryPagePage } from './gallery-page.page';\n"
+                },
+                {
+                    "date": 1625134132706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import { H } from './../../../core/page/header-page/header-page.module';\n+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n+import { IonicModule } from '@ionic/angular';\n+\n+import { GalleryPagePage } from './gallery-page.page';\n+\n+describe('GalleryPagePage', () => {\n+  let component: GalleryPagePage;\n+  let fixture: ComponentFixture<GalleryPagePage>;\n+\n+  beforeEach(waitForAsync(() => {\n+    TestBed.configureTestingModule({\n+      declarations: [ GalleryPagePage ],\n+      imports: [IonicModule.forRoot(), HeaderPageModule]\n+    }).compileComponents();\n+\n+    fixture = TestBed.createComponent(GalleryPagePage);\n+    component = fixture.componentInstance;\n+    fixture.detectChanges();\n+  }));\n+\n+  it('should create', () => {\n+    expect(component).toBeTruthy();\n+  });\n+});\n"
+                }
+            ],
+            "date": 1625134051879,
+            "name": "Commit-0",
+            "content": "import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\nimport { IonicModule } from '@ionic/angular';\n\n\nimport { GalleryPagePage } from './gallery-page.page';\n\ndescribe('GalleryPagePage', () => {\n  let component: GalleryPagePage;\n  let fixture: ComponentFixture<GalleryPagePage>;\n\n  beforeEach(waitForAsync(() => {\n    TestBed.configureTestingModule({\n      declarations: [ GalleryPagePage ],\n      imports: [IonicModule.forRoot()]\n    }).compileComponents();\n\n    fixture = TestBed.createComponent(GalleryPagePage);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  }));\n\n  it('should create', () => {\n    expect(component).toBeTruthy();\n  });\n});\n"
+        }
+    ]
+}

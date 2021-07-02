@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/core/page/tabs-page/tabs-page.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1625199744104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1625199744104,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule } from '@angular/forms';\n\nimport { IonicModule } from '@ionic/angular';\n\nimport { TabsPagePageRoutingModule } from './tabs-page-routing.module';\nimport { TabsPagePage } from './tabs-page.page';\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    IonicModule,\n    TabsPagePageRoutingModule\n  ],\n  declarations: [TabsPagePage]\n})\nexport class TabsPagePageModule {}\n"
+        }
+    ]
+}
