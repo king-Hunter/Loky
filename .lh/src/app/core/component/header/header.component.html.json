@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/core/component/header/header.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625510285173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625510285532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <ion-header>\n-  <ion-toolbar color=\"w\">\n+  <ion-toolbar color=\"wan\">\n     <ion-title class=\"bolderText\">{{ title }}</ion-title>\n   </ion-toolbar>\n </ion-header>\n"
+                },
+                {
+                    "date": 1625510291641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <ion-header>\n-  <ion-toolbar color=\"pri\">\n+  <ion-toolbar color=\"prima\">\n     <ion-title class=\"bolderText\">{{ title }}</ion-title>\n   </ion-toolbar>\n </ion-header>\n"
+                },
+                {
+                    "date": 1625510354535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+<ion-header>\n+  <ion-toolbar color=\"\">\n+    <ion-title class=\"bolderText\">{{ title }}</ion-title>\n+  </ion-toolbar>\n+</ion-header>\n"
+                }
+            ],
+            "date": 1625510285173,
+            "name": "Commit-0",
+            "content": "<ion-header>\n  <ion-toolbar color=\"w\">\n    <ion-title class=\"bolderText\">{{ title }}</ion-title>\n  </ion-toolbar>\n</ion-header>\n"
+        }
+    ]
+}

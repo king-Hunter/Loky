@@ -1,3 +1,4 @@
+import { RefreshModule } from './../../../core/component/refresh-page/refresh.module';
 import { HeaderModule } from './../../../core/component/header/header.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
     IonicModule,
     OptionPagePageRoutingModule,
     HeaderModule,
+    RefreshModule,
     RouterModule.forChild([{ path: '', component: OptionPagePage }]),
   ],
   declarations: [OptionPagePage],

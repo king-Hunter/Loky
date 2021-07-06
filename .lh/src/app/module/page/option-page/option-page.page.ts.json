@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/app/module/page/option-page/option-page.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1625370087764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625370094324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   templateUrl: './option-page.page.html',\n   styleUrls: ['./option-page.page.scss'],\n })\n export class OptionPagePage implements OnInit {\n-  @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n+  @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScrol;\n   public data: any;\n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n"
+                },
+                {
+                    "date": 1625370137526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\n import { JsonplaceholderServiceService } from './../../service/jsonplaceholder-api/jsonplaceholder-service.service';\n-import { Component, OnInit } from '@angular/core';\n+import { Component, OnInit, ViewChild } from '@angular/core';\n+import { IonInfiniteScroll } from '@ionic/angular';\n @Component({\n   selector: 'app-option-page',\n   templateUrl: './option-page.page.html',\n   styleUrls: ['./option-page.page.scss'],\n })\n export class OptionPagePage implements OnInit {\n-  @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScrol;\n+  @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n"
+                },
+                {
+                    "date": 1625370224239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,6 @@\n         this.toastNotificationService.errorToast('Error al buscar los datos');\n       }\n     );\n   }\n+  \n }\n"
+                },
+                {
+                    "date": 1625370237472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,6 +38,21 @@\n         this.toastNotificationService.errorToast('Error al buscar los datos');\n       }\n     );\n   }\n-  \n+\n+  public loadData(event) {\n+        setTimeout(() => {\n+            event.target.complete();\n+            if (this.data.length < this.lstProductosOriginal.length) {\n+                let len = this.lstProductos.length;\n+                for (let i = len; i <= len + 6; i++) {\n+                    if (this.lstProductosOriginal[i] === undefined) {\n+                        this.scroll = false;\n+                        break;\n+                    }\n+                    this.lstProductos.push(this.lstProductosOriginal[i]);\n+                }\n+            }\n+        }, 500);\n+    }\n }\n"
+                },
+                {
+                    "date": 1625370242718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n })\n export class OptionPagePage implements OnInit {\n   @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n+  \n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n   ) {}\n"
+                },
+                {
+                    "date": 1625370251301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n })\n export class OptionPagePage implements OnInit {\n   @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n-  \n+  private\n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n   ) {}\n"
+                },
+                {
+                    "date": 1625370257634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n })\n export class OptionPagePage implements OnInit {\n   @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n-  private\n+  const d\n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n   ) {}\n"
+                },
+                {
+                    "date": 1625370257768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n })\n export class OptionPagePage implements OnInit {\n   @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n-  const d\n+  const data\n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n   ) {}\n"
+                },
+                {
+                    "date": 1625370263656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n })\n export class OptionPagePage implements OnInit {\n   @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n-  const te\n+  const \n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n   ) {}\n"
+                },
+                {
+                    "date": 1625370268850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n })\n export class OptionPagePage implements OnInit {\n   @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n   public data: any;\n-  const originalDat\n+  const originalData\n   constructor(\n     private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n     private toastNotificationService: ToastNotificationsService\n   ) {}\n"
+                }
+            ],
+            "date": 1625370087764,
+            "name": "Commit-0",
+            "content": "import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\nimport { JsonplaceholderServiceService } from './../../service/jsonplaceholder-api/jsonplaceholder-service.service';\nimport { Component, OnInit } from '@angular/core';\n@Component({\n  selector: 'app-option-page',\n  templateUrl: './option-page.page.html',\n  styleUrls: ['./option-page.page.scss'],\n})\nexport class OptionPagePage implements OnInit {\n  @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n  public data: any;\n  constructor(\n    private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n    private toastNotificationService: ToastNotificationsService\n  ) {}\n\n  ngOnInit() {\n    this.getServiceAll();\n  }\n\n  public getServiceAll() {\n    this.serviceJsonPlaceHolderService.getAll().subscribe(\n      (respuesta) => {\n        this.toastNotificationService.successToast('Datos obtenidos');\n        const tempData = respuesta;\n        tempData.forEach((element) => {\n          element.completedLabel = 'Sin Completar';\n          element.completedColor = 'danger';\n          if (element.completed) {\n            element.completedLabel = 'Completado';\n            element.completedColor = 'success';\n          }\n        });\n        this.data = tempData;\n      },\n      (error) => {\n        this.toastNotificationService.errorToast('Error al buscar los datos');\n      }\n    );\n  }\n}\n"
+        }
+    ]
+}

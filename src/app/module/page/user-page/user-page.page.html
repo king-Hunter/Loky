@@ -1,6 +1,7 @@
 <app-header title="Usuarios"></app-header>
 
 <ion-content>
+  <app-refresh-page (response)="reloadPage($event)"></app-refresh-page>
   <ion-list>
     <ion-list-header> Lista de usuarios </ion-list-header>
     <ion-item *ngFor="let item of data" (click)="openInfoUser(item)">

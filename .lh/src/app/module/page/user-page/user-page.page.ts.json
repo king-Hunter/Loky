@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/app/module/page/user-page/user-page.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1625262639621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625287032127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,8 @@\n         this.toastNotificationService.errorToast('Error con el servidor');\n       }\n     );\n   }\n-\n   public openInfoUser(user: any) {\n     this.showModal(user);\n   }\n \n"
+                },
+                {
+                    "date": 1625374380885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,5 +48,6 @@\n       },\n     });\n     return await modal.present();\n   }\n+  \n }\n"
+                },
+                {
+                    "date": 1625374387618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,6 +48,7 @@\n       },\n     });\n     return await modal.present();\n   }\n-  \n+\n+  public reloadPage(\n }\n"
+                },
+                {
+                    "date": 1625374393914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,8 @@\n     });\n     return await modal.present();\n   }\n \n-  public reloadPage(){}\n+  public reloadPage(){\n+    \n+  }\n }\n"
+                },
+                {
+                    "date": 1625374401044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,7 +50,6 @@\n     return await modal.present();\n   }\n \n   public reloadPage(event){\n-\n   }\n }\n"
+                }
+            ],
+            "date": 1625262639621,
+            "name": "Commit-0",
+            "content": "import { ShowInfoUserComponent } from './../../../core/component/show-info-user/show-info-user.component';\nimport { JsonplaceholderServiceService } from './../../service/jsonplaceholder-api/jsonplaceholder-service.service';\nimport { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\nimport { Component, OnInit } from '@angular/core';\nimport { ModalController } from '@ionic/angular';\n\n@Component({\n  selector: 'app-user-page',\n  templateUrl: './user-page.page.html',\n  styleUrls: ['./user-page.page.scss'],\n})\nexport class UserPagePage implements OnInit {\n  public data: any;\n  constructor(\n    private modalController: ModalController,\n    private toastNotificationService: ToastNotificationsService,\n    private jsonPlaceHolderService: JsonplaceholderServiceService\n  ) {}\n\n  ngOnInit() {\n    this.getServiceUser();\n  }\n\n  public getServiceUser() {\n    this.jsonPlaceHolderService.getUser().subscribe(\n      (response) => {\n        this.toastNotificationService.successToast(\n          'Usuarios Obtenidos con exito'\n        );\n        this.data = response;\n      },\n      (error) => {\n        this.toastNotificationService.errorToast('Error con el servidor');\n      }\n    );\n  }\n\n  public openInfoUser(user: any) {\n    this.showModal(user);\n  }\n\n  async showModal(params: any) {\n    const modal = await this.modalController.create({\n      component: ShowInfoUserComponent,\n      cssClass: 'my-custom-class',\n      swipeToClose: true,\n      componentProps: {\n        userData: params,\n      },\n    });\n    return await modal.present();\n  }\n}\n"
+        }
+    ]
+}

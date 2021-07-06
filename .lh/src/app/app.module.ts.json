@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/app.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1625461738866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1625461738866,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { RouteReuseStrategy } from '@angular/router';\nimport { HttpClientModule } from '@angular/common/http';\nimport { IonicModule, IonicRouteStrategy } from '@ionic/angular';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [AppComponent],\n  entryComponents: [],\n  imports: [\n    BrowserModule,\n    HttpClientModule,\n    IonicModule.forRoot(),\n    AppRoutingModule,\n  ],\n  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n"
+        }
+    ]
+}

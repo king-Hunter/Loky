@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/app/module/page/user-page/user-page.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1625374233971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625374248182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { RefreshModule } from './../../../core/component/refresh-page/refresh.module';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { FormsModule } from '@angular/forms';\n \n@@ -17,10 +18,11 @@\n     CommonModule,\n     FormsModule,\n     IonicModule,\n     UserPagePageRoutingModule,\n-    HeaderModule,,\n+    HeaderModule,\n+    RefreshModule,\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n-  declarations: [UserPagePage, ShowInfoUserComponent]\n+  declarations: [UserPagePage, ShowInfoUserComponent,]\n })\n export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625509705308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,9 @@\n     FormsModule,\n     IonicModule,\n     UserPagePageRoutingModule,\n     HeaderModule,\n-    RefreshModule,\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n-  declarations: [UserPagePage, ShowInfoUserComponent,]\n+  declarations: [UserPagePage, ShowInfoUserComponent]\n })\n export class UserPagePageModule {}\n"
+                },
+                {
+                    "date": 1625509733633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     FormsModule,\n     IonicModule,\n     UserPagePageRoutingModule,\n     HeaderModule,\n+    Refre<shModule,\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n   declarations: [UserPagePage, ShowInfoUserComponent]\n })\n"
+                },
+                {
+                    "date": 1625511427967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,9 @@\n     CommonModule,\n     FormsModule,\n     IonicModule,\n     UserPagePageRoutingModule,\n-    HeaderModule,\n-    Refre<shModule,\n+    \n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n   declarations: [UserPagePage, ShowInfoUserComponent]\n })\n"
+                },
+                {
+                    "date": 1625511437130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n   imports: [\n     CommonModule,\n     FormsModule,\n     IonicModule,\n-    UserPagePageRoutingModule,\n-    \n+    UserPagePageRoutingModule\n+\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n   declarations: [UserPagePage, ShowInfoUserComponent]\n })\n"
+                },
+                {
+                    "date": 1625511451687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n   imports: [\n     CommonModule,\n     FormsModule,\n     IonicModule,\n-    UserPagePageRoutingModule\n+    UserPagePageRoutingModule,\n+    Header\n \n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n   declarations: [UserPagePage, ShowInfoUserComponent]\n"
+                },
+                {
+                    "date": 1625511460718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n     CommonModule,\n     FormsModule,\n     IonicModule,\n     UserPagePageRoutingModule,\n-    HeaderMN\n-\n+    HeaderModule,\n+    RefreshModule,\n     RouterModule.forChild([{ path: '', component: UserPagePage }]),\n   ],\n   declarations: [UserPagePage, ShowInfoUserComponent]\n })\n"
+                }
+            ],
+            "date": 1625374233971,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule } from '@angular/forms';\n\nimport { IonicModule } from '@ionic/angular';\n\nimport { UserPagePageRoutingModule } from './user-page-routing.module';\n\nimport { UserPagePage } from './user-page.page';\n\nimport { HeaderModule } from './../../../core/component/header/header.module';\nimport { RouterModule } from '@angular/router';\nimport { ShowInfoUserComponent } from '../../../core/component/show-info-user/show-info-user.component';\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    IonicModule,\n    UserPagePageRoutingModule,\n    HeaderModule,,\n    RouterModule.forChild([{ path: '', component: UserPagePage }]),\n  ],\n  declarations: [UserPagePage, ShowInfoUserComponent]\n})\nexport class UserPagePageModule {}\n"
+        }
+    ]
+}

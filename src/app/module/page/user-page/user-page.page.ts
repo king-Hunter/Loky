@@ -49,4 +49,10 @@ export class UserPagePage implements OnInit {
     });
     return await modal.present();
   }
+
+  public reloadPage(event: any){
+    if(event){
+      this.ngOnInit();
+    }
+  }
 }

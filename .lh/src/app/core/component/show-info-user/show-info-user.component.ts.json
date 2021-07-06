@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/core/component/show-info-user/show-info-user.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1625506194794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625506200953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n   constructor(public modalCtrl: ModalController) { }\n \n   ngOnInit() {\n-    \n+    loig\n   }\n \n   public closeModal() {\n     this.modalCtrl.dismiss();\n"
+                },
+                {
+                    "date": 1625506209347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n \n   constructor(public modalCtrl: ModalController) { }\n \n   ngOnInit() {\n-    loig\n+    console.log(this);\n+\n   }\n \n   public closeModal() {\n     this.modalCtrl.dismiss();\n"
+                }
+            ],
+            "date": 1625506194794,
+            "name": "Commit-0",
+            "content": "import { Component, Input, OnInit } from '@angular/core';\nimport { ModalController } from '@ionic/angular';\n\n@Component({\n  selector: 'app-show-info-user',\n  templateUrl: './show-info-user.component.html',\n  styleUrls: ['./show-info-user.component.scss'],\n})\nexport class ShowInfoUserComponent implements OnInit {\n@Input() public userData: any;\n\n  constructor(public modalCtrl: ModalController) { }\n\n  ngOnInit() {\n    \n  }\n\n  public closeModal() {\n    this.modalCtrl.dismiss();\n  }\n}\n"
+        }
+    ]
+}

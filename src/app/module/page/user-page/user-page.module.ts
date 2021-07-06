@@ -1,3 +1,4 @@
+import { RefreshModule } from './../../../core/component/refresh-page/refresh.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -19,6 +20,7 @@ import { ShowInfoUserComponent } from '../../../core/component/show-info-user/sh
     IonicModule,
     UserPagePageRoutingModule,
     HeaderModule,
+    RefreshModule,
     RouterModule.forChild([{ path: '', component: UserPagePage }]),
   ],
   declarations: [UserPagePage, ShowInfoUserComponent]

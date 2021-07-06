@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/core/component/show-info-user/show-info-user.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625504575285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625504575435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n </ion-header>\n \n \n \n+\n <ion-content>\n   <ion-card class=\"ios hydrated\">\n     <img src=\"https://ionicframework.com/docs/demos/api/avatar/avatar.svg\">\n     <ion-card-header class=\"ion-inherit-color ios hydrated\">\n"
+                },
+                {
+                    "date": 1625504794353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n </ion-header>\n \n \n \n-<\n+<io\n \n <ion-content>\n   <ion-card class=\"ios hydrated\">\n     <img src=\"https://ionicframework.com/docs/demos/api/avatar/avatar.svg\">\n"
+                },
+                {
+                    "date": 1625504794466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n </ion-header>\n \n \n \n-<io\n+<ion\n \n <ion-content>\n   <ion-card class=\"ios hydrated\">\n     <img src=\"https://ionicframework.com/docs/demos/api/avatar/avatar.svg\">\n"
+                }
+            ],
+            "date": 1625504575285,
+            "name": "Commit-0",
+            "content": "<ion-header>\n  <ion-toolbar color=\"secondary\">\n    <ion-title class=\"bolderText\">Información de usuario</ion-title>\n    <ion-buttons (click)=\"closeModal()\" slot=\"end\">\n      <ion-button>\n        <ion-icon name=\"close-outline\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n\n<ion-content>\n  <ion-card class=\"ios hydrated\">\n    <img src=\"https://ionicframework.com/docs/demos/api/avatar/avatar.svg\">\n    <ion-card-header class=\"ion-inherit-color ios hydrated\">\n      <ion-card-subtitle\n        role=\"heading\"\n        aria-level=\"3\"\n        class=\"ion-inherit-color ios hydrated\"\n        >{{ userData.name }}\n      </ion-card-subtitle>\n      <ion-card-title\n        role=\"heading\"\n        aria-level=\"2\"\n        class=\"ion-inherit-color ios hydrated\"\n        >{{ userData.username }}</ion-card-title\n      >\n    </ion-card-header>\n    <ion-card-content class=\"ios card-content-ios hydrated\">\n      <ion-badge color=\"secondary\">Dirección </ion-badge>\n      <p>Calle {{ userData.address.street }} {{ userData.address.suite }}</p>\n      <p>Ciudad {{ userData.address.city }}</p>\n      <p>C.P. {{ userData.address.zipcode }}</p>\n      <ion-badge color=\"secondary\">Telefono </ion-badge>\n      <p>{{ userData.phone }}</p>\n      <ion-badge color=\"secondary\">Compañía </ion-badge>\n      <p>{{ userData.company.name }}</p>\n      <p>{{ userData.company.catchPhrase }}</p>\n      <p>{{ userData.company.bs }}</p>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n"
+        }
+    ]
+}

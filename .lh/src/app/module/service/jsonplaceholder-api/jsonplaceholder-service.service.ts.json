@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/module/service/jsonplaceholder-api/jsonplaceholder-service.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1625374706824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625374715666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     );\n   }\n \n   public getUser(event): Observable<any> {\n-    this.baseUrl\n+    this.baseUrlU\n     return this.httpClient.get(this.urlUser).pipe(\n       map((data) => {\n         return data;\n       })\n"
+                },
+                {
+                    "date": 1625374717373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     );\n   }\n \n   public getUser(event): Observable<any> {\n-    this.baseUrlUse\n+    this.baseUrlUser\n     return this.httpClient.get(this.urlUser).pipe(\n       map((data) => {\n         return data;\n       })\n"
+                }
+            ],
+            "date": 1625374706824,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\nimport { HttpClient } from '@angular/common/http';\nimport { Observable } from 'rxjs';\nimport { map } from 'rxjs/operators';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class JsonplaceholderServiceService {\n  public urlAll = `https://jsonplaceholder.typicode.com/todos`;\n  public urlUser = `https://jsonplaceholder.typicode.com/users`;\n  constructor(private httpClient: HttpClient) {}\n\n  public getAll(): Observable<any> {\n    return this.httpClient.get(this.urlAll).pipe(\n      map((data) => {\n        return data;\n      })\n    );\n  }\n\n  public getUser(event): Observable<any> {\n    return this.httpClient.get(this.urlUser).pipe(\n      map((data) => {\n        return data;\n      })\n    );\n  }\n}\n"
+        }
+    ]
+}

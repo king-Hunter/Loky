@@ -11,7 +11,10 @@ export class ShowInfoUserComponent implements OnInit {
 
   constructor(public modalCtrl: ModalController) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.userData);
+
+  }
 
   public closeModal() {
     this.modalCtrl.dismiss();

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/app/module/page/option-page/option-page.page.spec.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1625373095390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625373095572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n   beforeEach(waitForAsync(() => {\n     TestBed.configureTestingModule({\n       declarations: [ OptionPagePage ],\n-      imports: [IonicModule.forRoot(), HeaderModule,]\n+      imports: [IonicModule.forRoot(), HeaderModule, ]\n     }).compileComponents();\n \n     fixture = TestBed.createComponent(OptionPagePage);\n     component = fixture.componentInstance;\n"
+                },
+                {
+                    "date": 1625373103287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n import { HeaderModule } from './../../../core/component/header/header.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n-\n import { OptionPagePage } from './option-page.page';\n+import { RefreshModule } from 'src/app/core/component/refresh-page/refresh.module';\n \n describe('OptionPagePage', () => {\n   let component: OptionPagePage;\n   let fixture: ComponentFixture<OptionPagePage>;\n \n   beforeEach(waitForAsync(() => {\n     TestBed.configureTestingModule({\n       declarations: [ OptionPagePage ],\n-      imports: [IonicModule.forRoot(), HeaderModule, ]\n+      imports: [IonicModule.forRoot(), HeaderModule, RefreshModule]\n     }).compileComponents();\n \n     fixture = TestBed.createComponent(OptionPagePage);\n     component = fixture.componentInstance;\n"
+                },
+                {
+                    "date": 1625373138237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { HeaderModule } from './../../../core/component/header/header.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n import { OptionPagePage } from './option-page.page';\n-import { RefreshModule } from 'src/app/core/component/refresh-page/refresh.module';\n \n+\n describe('OptionPagePage', () => {\n   let component: OptionPagePage;\n   let fixture: ComponentFixture<OptionPagePage>;\n \n"
+                },
+                {
+                    "date": 1625373138598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n import { OptionPagePage } from './option-page.page';\n \n-\n describe('OptionPagePage', () => {\n   let component: OptionPagePage;\n   let fixture: ComponentFixture<OptionPagePage>;\n \n"
+                }
+            ],
+            "date": 1625373095390,
+            "name": "Commit-0",
+            "content": "import { HeaderModule } from './../../../core/component/header/header.module';\nimport { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\nimport { IonicModule } from '@ionic/angular';\n\nimport { OptionPagePage } from './option-page.page';\n\ndescribe('OptionPagePage', () => {\n  let component: OptionPagePage;\n  let fixture: ComponentFixture<OptionPagePage>;\n\n  beforeEach(waitForAsync(() => {\n    TestBed.configureTestingModule({\n      declarations: [ OptionPagePage ],\n      imports: [IonicModule.forRoot(), HeaderModule,]\n    }).compileComponents();\n\n    fixture = TestBed.createComponent(OptionPagePage);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  }));\n\n  it('should create', () => {\n    expect(component).toBeTruthy();\n  });\n});\n"
+        }
+    ]
+}

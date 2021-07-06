@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/module/page/user-page/user-page.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1625374322689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625374328141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n-  <app-refre\n+  <app-refresh\n   <ion-list>\n     <ion-list-header> Lista de usuarios </ion-list-header>\n     <ion-item *ngFor=\"let item of data\" (click)=\"openInfoUser(item)\">\n       <ion-avatar slot=\"start\">\n"
+                },
+                {
+                    "date": 1625374337744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <app-header title=\"Usuarios\"></app-header>\n \n <ion-content>\n-  <app-refresh-page (response) ></app-refresh-page>\n+  <app-refresh-page (response) =></app-refresh-page>\n   <ion-list>\n     <ion-list-header> Lista de usuarios </ion-list-header>\n     <ion-item *ngFor=\"let item of data\" (click)=\"openInfoUser(item)\">\n       <ion-avatar slot=\"start\">\n"
+                }
+            ],
+            "date": 1625374322689,
+            "name": "Commit-0",
+            "content": "<app-header title=\"Usuarios\"></app-header>\n\n<ion-content>\n  \n  <ion-list>\n    <ion-list-header> Lista de usuarios </ion-list-header>\n    <ion-item *ngFor=\"let item of data\" (click)=\"openInfoUser(item)\">\n      <ion-avatar slot=\"start\">\n        <img src=\"https://ionicframework.com/docs/demos/api/avatar/avatar.svg\" />\n      </ion-avatar>\n      <ion-label>\n        <h2 class=\"bolderText\">{{item.username}}</h2>\n        <h3>{{item.name}}</h3>\n      </ion-label>\n      <p slot=\"end\" class=\"ion-padding-top\">\n        <ion-badge color=\"secondary\">{{item.website}}</ion-badge>\n      </p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n"
+        }
+    ]
+}

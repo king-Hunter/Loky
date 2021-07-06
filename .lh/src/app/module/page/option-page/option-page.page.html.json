@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/app/module/page/option-page/option-page.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1625370493931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625370503071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,13 @@\n         <ion-label>{{item.completedLabel}}</ion-label>\n       </ion-chip>\n     </ion-item>\n   </ion-list>\n-  \n+\n+  <ion-infinite-scroll threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+    <ion-infinite-scroll-content\n+      loadingSpinner=\"bubbles\"\n+      loadingText=\"Loading  data...\">\n+    </ion-infinite-scroll-content>\n+  </ion-infinite-scroll>\n+\n </ion-content>\n"
+                },
+                {
+                    "date": 1625370508304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+<app-header title=\"Lista de Opciones\"></app-header>\n+\n+<ion-content>\n+  <ion-list>\n+    <h2 class=\"textCenter\">Todos</h2>\n+    <ion-item *ngFor=\"let item of data\">\n+      <ion-label>\n+        <h2>{{item.title}}</h2>\n+      </ion-label>\n+      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n+        <ion-label>{{item.completedLabel}}</ion-label>\n+      </ion-chip>\n+    </ion-item>\n+  </ion-list>\n+\n+  <ion-infinite-scroll threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+    <ion-infinite-scroll-content\n+      loadingSpinner=\"bubbles\"\n+      loadingText=\"Carg data...\">\n+    </ion-infinite-scroll-content>\n+  </ion-infinite-scroll>\n+\n+</ion-content>\n"
+                },
+                {
+                    "date": 1625370575745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,35 +12,12 @@\n       </ion-chip>\n     </ion-item>\n   </ion-list>\n \n-  <ion-infinite-scroll threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+  <ion-infinite-scroll ngthreshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n     <ion-infinite-scroll-content\n       loadingSpinner=\"bubbles\"\n-      loadingText=\"Carg data...\">\n+      loadingText=\"Cargando mas datos...\">\n     </ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n \n </ion-content>\n-<app-header title=\"Lista de Opciones\"></app-header>\n-\n-<ion-content>\n-  <ion-list>\n-    <h2 class=\"textCenter\">Todos</h2>\n-    <ion-item *ngFor=\"let item of data\">\n-      <ion-label>\n-        <h2>{{item.title}}</h2>\n-      </ion-label>\n-      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n-        <ion-label>{{item.completedLabel}}</ion-label>\n-      </ion-chip>\n-    </ion-item>\n-  </ion-list>\n-\n-  <ion-infinite-scroll threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n-    <ion-infinite-scroll-content\n-      loadingSpinner=\"bubbles\"\n-      loadingText=\"Loading  data...\">\n-    </ion-infinite-scroll-content>\n-  </ion-infinite-scroll>\n-\n-</ion-content>\n"
+                },
+                {
+                    "date": 1625370592848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+<app-header title=\"Lista de Opciones\"></app-header>\n+\n+<ion-content>\n+  <ion-list>\n+    <h2 class=\"textCenter\">Todos</h2>\n+    <ion-item *ngFor=\"let item of data\">\n+      <ion-label>\n+        <h2>{{item.title}}</h2>\n+      </ion-label>\n+      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n+        <ion-label>{{item.completedLabel}}</ion-label>\n+      </ion-chip>\n+    </ion-item>\n+  </ion-list>\n+\n+  <ion-infinite-scroll *ngIf=\"\" threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+    <ion-infinite-scroll-content\n+      loadingSpinner=\"bubbles\"\n+      loadingText=\"Cargando mas datos...\">\n+    </ion-infinite-scroll-content>\n+  </ion-infinite-scroll>\n+\n+</ion-content>\n"
+                },
+                {
+                    "date": 1625370598971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+<app-header title=\"Lista de Opciones\"></app-header>\n+\n+<ion-content>\n+  <ion-list>\n+    <h2 class=\"textCenter\">Todos</h2>\n+    <ion-item *ngFor=\"let item of data\">\n+      <ion-label>\n+        <h2>{{item.title}}</h2>\n+      </ion-label>\n+      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n+        <ion-label>{{item.completedLabel}}</ion-label>\n+      </ion-chip>\n+    </ion-item>\n+  </ion-list>\n+\n+  <ion-infinite-scroll *ngIf=\"scroll\" threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+    <ion-infinite-scroll-content\n+      loadingSpinner=\"bubbles\"\n+      loadingText=\"Cargando mas datos...\">\n+    </ion-infinite-scroll-content>\n+  </ion-infinite-scroll>\n+\n+</ion-content>\n"
+                },
+                {
+                    "date": 1625371311625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,50 +20,4 @@\n     </ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n \n </ion-content>\n-<app-header title=\"Lista de Opciones\"></app-header>\n-\n-<ion-content>\n-  <ion-list>\n-    <h2 class=\"textCenter\">Todos</h2>\n-    <ion-item *ngFor=\"let item of data\">\n-      <ion-label>\n-        <h2>{{item.title}}</h2>\n-      </ion-label>\n-      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n-        <ion-label>{{item.completedLabel}}</ion-label>\n-      </ion-chip>\n-    </ion-item>\n-  </ion-list>\n-\n-  <ion-infinite-scroll *ngIf=\"\" threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n-    <ion-infinite-scroll-content\n-      loadingSpinner=\"bubbles\"\n-      loadingText=\"Cargando mas datos...\">\n-    </ion-infinite-scroll-content>\n-  </ion-infinite-scroll>\n-\n-</ion-content>\n-<app-header title=\"Lista de Opciones\"></app-header>\n-\n-<ion-content>\n-  <ion-list>\n-    <h2 class=\"textCenter\">Todos</h2>\n-    <ion-item *ngFor=\"let item of data\">\n-      <ion-label>\n-        <h2>{{item.title}}</h2>\n-      </ion-label>\n-      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n-        <ion-label>{{item.completedLabel}}</ion-label>\n-      </ion-chip>\n-    </ion-item>\n-  </ion-list>\n-\n-  <ion-infinite-scroll ngthreshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n-    <ion-infinite-scroll-content\n-      loadingSpinner=\"bubbles\"\n-      loadingText=\"Cargando mas datos...\">\n-    </ion-infinite-scroll-content>\n-  </ion-infinite-scroll>\n-\n-</ion-content>\n"
+                },
+                {
+                    "date": 1625371476442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <app-header title=\"Lista de Opciones\"></app-header>\n \n <ion-content>\n+  \n   <ion-list>\n     <h2 class=\"textCenter\">Todos</h2>\n     <ion-item *ngFor=\"let item of data\">\n       <ion-label>\n"
+                },
+                {
+                    "date": 1625371476648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+<app-header title=\"Lista de Opciones\"></app-header>\n+\n+<ion-content>\n+  <ion-refresher slot=\"fixed\" id=\"refresher\">\n+        <ion-refresher-content></ion-refresher-content>\n+      </ion-refresher>\n+  <ion-list>\n+    <h2 class=\"textCenter\">Todos</h2>\n+    <ion-item *ngFor=\"let item of data\">\n+      <ion-label>\n+        <h2>{{item.title}}</h2>\n+      </ion-label>\n+      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n+        <ion-label>{{item.completedLabel}}</ion-label>\n+      </ion-chip>\n+    </ion-item>\n+  </ion-list>\n+\n+  <ion-infinite-scroll *ngIf=\"scroll\" threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+    <ion-infinite-scroll-content\n+      loadingSpinner=\"bubbles\"\n+      loadingText=\"Cargando mas datos...\">\n+    </ion-infinite-scroll-content>\n+  </ion-infinite-scroll>\n+\n+</ion-content>\n"
+                },
+                {
+                    "date": 1625371509450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,11 @@\n <app-header title=\"Lista de Opciones\"></app-header>\n \n <ion-content>\n-  <ion-refresher slot=\"fixed\" id=\"refresher\">\n-        <ion-refresher-content></ion-refresher-content>\n-      </ion-refresher>\n-  <ion-list>\n-    <h2 class=\"textCenter\">Todos</h2>\n-    <ion-item *ngFor=\"let item of data\">\n-      <ion-label>\n-        <h2>{{item.title}}</h2>\n-      </ion-label>\n-      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n-        <ion-label>{{item.completedLabel}}</ion-label>\n-      </ion-chip>\n-    </ion-item>\n-  </ion-list>\n+  <ion-refresher slot=\"fixed\" (ionRefresh)=\"doRefresh($event)\">\n+    <ion-refresher-content></ion-refresher-content>\n+  </ion-refresher>\n \n-  <ion-infinite-scroll *ngIf=\"scroll\" threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n-    <ion-infinite-scroll-content\n-      loadingSpinner=\"bubbles\"\n-      loadingText=\"Cargando mas datos...\">\n-    </ion-infinite-scroll-content>\n-  </ion-infinite-scroll>\n-\n-</ion-content>\n-<app-header title=\"Lista de Opciones\"></app-header>\n-\n-<ion-content>\n-  \n   <ion-list>\n     <h2 class=\"textCenter\">Todos</h2>\n     <ion-item *ngFor=\"let item of data\">\n       <ion-label>\n@@ -39,12 +16,16 @@\n       </ion-chip>\n     </ion-item>\n   </ion-list>\n \n-  <ion-infinite-scroll *ngIf=\"scroll\" threshold=\"100px\" (ionInfinite)=\"loadData($event)\">\n+  <ion-infinite-scroll\n+    *ngIf=\"scroll\"\n+    threshold=\"100px\"\n+    (ionInfinite)=\"loadData($event)\"\n+  >\n     <ion-infinite-scroll-content\n       loadingSpinner=\"bubbles\"\n-      loadingText=\"Cargando mas datos...\">\n+      loadingText=\"Cargando mas datos...\"\n+    >\n     </ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n-\n </ion-content>\n"
+                },
+                {
+                    "date": 1625372465565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n <app-header title=\"Lista de Opciones\"></app-header>\n \n <ion-content>\n-  <ion-refresher slot=\"fixed\" (ionRefresh)=\"doRefresh($event)\">\n-    <ion-refresher-content></ion-refresher-content>\n-  </ion-refresher>\n+  \n \n   <ion-list>\n     <h2 class=\"textCenter\">Todos</h2>\n     <ion-item *ngFor=\"let item of data\">\n"
+                },
+                {
+                    "date": 1625372948663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <app-header title=\"Lista de Opciones\"></app-header>\n \n <ion-content>\n+\n   <ion-list>\n     <h2 class=\"textCenter\">Todos</h2>\n     <ion-item *ngFor=\"let item of data\">\n       <ion-label>\n"
+                },
+                {
+                    "date": 1625372953804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n <app-header title=\"Lista de Opciones\"></app-header>\n \n <ion-content>\n   \n-\n   <ion-list>\n     <h2 class=\"textCenter\">Todos</h2>\n     <ion-item *ngFor=\"let item of data\">\n       <ion-label>\n"
+                }
+            ],
+            "date": 1625370493930,
+            "name": "Commit-0",
+            "content": "<app-header title=\"Lista de Opciones\"></app-header>\n\n<ion-content>\n  <ion-list>\n    <h2 class=\"textCenter\">Todos</h2>\n    <ion-item *ngFor=\"let item of data\">\n      <ion-label>\n        <h2>{{item.title}}</h2>\n      </ion-label>\n      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n        <ion-label>{{item.completedLabel}}</ion-label>\n      </ion-chip>\n    </ion-item>\n  </ion-list>\n  \n</ion-content>\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/module/page/user-page/user-page.page.spec.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1625374217460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625374226813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { RefreshModule } from './../../../core/component/refresh-page/refresh.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n import { HeaderModule } from './../../../core/component/header/header.module';\n import { UserPagePage } from './user-page.page';\n"
+                },
+                {
+                    "date": 1625374226875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { RefreshModule } from './../../../core/component/refresh-page/refresh.module';\n import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\n import { IonicModule } from '@ionic/angular';\n import { HeaderModule } from './../../../core/component/header/header.module';\n import { UserPagePage } from './user-page.page';\n"
+                }
+            ],
+            "date": 1625374217460,
+            "name": "Commit-0",
+            "content": "import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';\nimport { IonicModule } from '@ionic/angular';\nimport { HeaderModule } from './../../../core/component/header/header.module';\nimport { UserPagePage } from './user-page.page';\n\ndescribe('UserPagePage', () => {\n  let component: UserPagePage;\n  let fixture: ComponentFixture<UserPagePage>;\n\n  beforeEach(waitForAsync(() => {\n    TestBed.configureTestingModule({\n      declarations: [ UserPagePage ],\n      imports: [IonicModule.forRoot(), HeaderModule,]\n    }).compileComponents();\n\n    fixture = TestBed.createComponent(UserPagePage);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  }));\n\n  it('should create', () => {\n    expect(component).toBeTruthy();\n  });\n});\n"
+        }
+    ]
+}

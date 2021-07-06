@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/core/component/refresh-page/refresh.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1625372805137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625372811859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n+import { FormsModule } from '@angular/forms';\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n \n \n \n @NgModule({\n   declarations: [],\n   imports: [\n-    CommonModule,\n+    CommonModule, FormsModule\n   ]\n })\n export class RefreshModule { }\n"
+                },
+                {
+                    "date": 1625372817052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \n @NgModule({\n   declarations: [],\n   imports: [\n-    CommonModule, FormsModule, \n+    CommonModule, FormsModule, I\n   ]\n })\n export class RefreshModule { }\n"
+                },
+                {
+                    "date": 1625372827083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n @NgModule({\n   declarations: [],\n   imports: [\n     CommonModule, FormsModule, IonicModule\n-  ]\n+  ],\n })\n export class RefreshModule { }\n"
+                }
+            ],
+            "date": 1625372805137,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n\n\n@NgModule({\n  declarations: [],\n  imports: [\n    CommonModule,\n  ]\n})\nexport class RefreshModule { }\n"
+        }
+    ]
+}

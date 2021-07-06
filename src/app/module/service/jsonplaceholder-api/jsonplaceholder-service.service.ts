@@ -7,8 +7,8 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class JsonplaceholderServiceService {
-  public urlAll = `https://jsonplaceholder.typicode.com/todos`;
-  public urlUser = `https://jsonplaceholder.typicode.com/users`;
+  private urlAll = `https://jsonplaceholder.typicode.com/todos`;
+  private urlUser = `https://jsonplaceholder.typicode.com/users`;
   constructor(private httpClient: HttpClient) {}
 
   public getAll(): Observable<any> {
