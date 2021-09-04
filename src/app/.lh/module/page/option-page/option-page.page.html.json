@@ -1,0 +1,18 @@
+{
+    "sourceFile": "module/page/option-page/option-page.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1625627333224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1625627333224,
+            "name": "Commit-0",
+            "content": "<app-header title=\"Lista de Opciones\"></app-header>\n\n<ion-content>\n  <app-refresh-page (response)=\"reloadData($event)\"></app-refresh-page>\n  <ion-list>\n    <h2 class=\"textCenter\">Todos</h2>\n    <ion-item *ngFor=\"let item of data\">\n      <ion-label>\n        <h2>{{item.title}}</h2>\n      </ion-label>\n      <ion-chip slot=\"end\" color=\"{{item.completedColor}}\">\n        <ion-label>{{item.completedLabel}}</ion-label>\n      </ion-chip>\n    </ion-item>\n  </ion-list>\n\n  <ion-infinite-scroll\n    *ngIf=\"scroll\"\n    threshold=\"100px\"\n    (ionInfinite)=\"loadData()\"\n  >\n    <ion-infinite-scroll-content\n      loadingSpinner=\"bubbles\"\n      loadingText=\"Cargando mas datos...\"\n    >\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n"
+        }
+    ]
+}

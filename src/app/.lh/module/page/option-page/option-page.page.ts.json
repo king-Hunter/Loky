@@ -1,0 +1,18 @@
+{
+    "sourceFile": "module/page/option-page/option-page.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1625627354418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1625627354418,
+            "name": "Commit-0",
+            "content": "import { ToastNotificationsService } from './../../../core/service/notification-toast/notifications-toast-service.service';\nimport { JsonplaceholderServiceService } from './../../service/jsonplaceholder-api/jsonplaceholder-service.service';\nimport { Component, OnInit, ViewChild } from '@angular/core';\nimport { IonInfiniteScroll } from '@ionic/angular';\n@Component({\n  selector: 'app-option-page',\n  templateUrl: './option-page.page.html',\n  styleUrls: ['./option-page.page.scss'],\n})\nexport class OptionPagePage implements OnInit {\n  @ViewChild(IonInfiniteScroll ,{static:false}) infiniteScroll: IonInfiniteScroll;\n  public data: any;\n  private originalData: any;\n  public scroll : any;\n  constructor(\n    private serviceJsonPlaceHolderService: JsonplaceholderServiceService,\n    private toastNotificationService: ToastNotificationsService\n  ) {\n    this.scroll = true;\n  }\n\n  ngOnInit() {\n    this.getServiceAll();\n  }\n\n  public getServiceAll() {\n    this.serviceJsonPlaceHolderService.getAll().subscribe(\n      (respuesta) => {\n        this.toastNotificationService.successToast('Datos obtenidos');\n        const tempData = respuesta;\n        tempData.forEach((element: { completedLabel: string; completedColor: string; completed: any; }) => {\n          element.completedLabel = 'Sin Completar';\n          element.completedColor = 'danger';\n          if (element.completed) {\n            element.completedLabel = 'Completado';\n            element.completedColor = 'success';\n          }\n        });\n        this.scroll = true;\n        this.data = tempData;\n        this.originalData = tempData;\n        this.data = this.data.slice(0,15);\n      },\n      (error) => {\n        this.toastNotificationService.errorToast('Error al buscar los datos');\n      }\n    );\n  }\n\n  public loadData(event: ) {\n        setTimeout(() => {\n            event.target.complete();\n            if (this.data.length < this.originalData.length) {\n                let len = this.data.length;\n                for (let i = len; i <= len + 6; i++) {\n                    if (this.originalData[i] === undefined) {\n                        this.scroll = false;\n                        break;\n                    }\n                    this.data.push(this.originalData[i]);\n                }\n            }\n        }, 500);\n    }\n    public reloadData(event: any){\n      if (event) {\n        this.getServiceAll();\n      }\n    }\n}\n"
+        }
+    ]
+}

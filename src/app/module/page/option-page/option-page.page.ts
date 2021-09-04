@@ -47,7 +47,7 @@ export class OptionPagePage implements OnInit {
     );
   }
 
-  public loadData(event: { target: { complete: () => void; }; }) {
+  public loadData(event: any) {
         setTimeout(() => {
             event.target.complete();
             if (this.data.length < this.originalData.length) {
